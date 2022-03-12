@@ -1,111 +1,36 @@
 {
-    "background": {
-      "color": {
-        "value": "#000"
-      },
-      "position": "50% 50%",
-      "repeat": "no-repeat",
-      "size": "cover"
-    },
-    "fullScreen": {
-      "zIndex": 1
-    },
-    "interactivity": {
-      "events": {
-        "onClick": {
-          "mode": "push"
-        },
-        "onHover": {
-          "mode": "repulse"
-        }
-      },
-      "modes": {
-        "bubble": {
-          "distance": 400,
-          "duration": 2,
-          "opacity": 0.8,
-          "size": 40
-        },
-        "grab": {
-          "distance": 400
-        }
-      }
-    },
-    "particles": {
-      "color": {
-        "value": "#FFD700"
-      },
-      "links": {
-        "color": {
-          "value": "#ffffff"
-        },
-        "distance": 150,
-        "opacity": 0.4
-      },
-      "move": {
-        "attract": {
-          "rotate": {
-            "x": 600,
-            "y": 1200
-          }
-        },
-        "enable": true,
-        "outModes": {
-          "default": "destroy",
-          "bottom": "destroy",
-          "left": "destroy",
-          "right": "destroy",
-          "top": "destroy"
-        },
-        "speed": 5
-      },
+  "fpsLimit": 40,
+  "particles": {
       "number": {
-        "density": {
-          "enable": true
-        },
-        "value": 0
+          "value": 80,
+          "density": {
+              "enable": true,
+              "area": 800
+          }
+      },
+      "color": {
+          "value": ["#FFF", "#f1d606", "#006D5B", "#eb9594", "#f07f13"]
       },
       "opacity": {
-        "animation": {
-          "speed": 6,
-          "minimumValue": 0.1
-        }
+          "value": 0.5,
+          "random": true
       },
       "size": {
-        "value": {
-          "min": 0.1,
-          "max": 15
-        },
-        "animation": {
+          "value": 5,
+          "random": true
+      },
+      "move": {
           "enable": true,
-          "sync": true,
-          "destroy": "max",
-          "startValue": "min",
-          "minimumValue": 0.1
-        }
+          "speed": 6,
+          "random": false
       }
-    },
-    "emitters": {
-      "autoPlay": true,
-      "fill": true,
-      "life": {
-        "wait": false
-      },
-      "rate": {
-        "quantity": 3,
-        "delay": 0.1
-      },
-      "shape": "square",
-      "startCount": 0,
-      "size": {
-        "mode": "percent",
-        "height": 0,
-        "width": 100
-      },
-      "direction": "top",
-      "position": {
-        "x": 50,
-        "y": 100
+  },
+  "interactivity": {
+      "events": {
+        "resize": true
       }
-    }
+  },
+  "background": {
+      "image": "radial-gradient(#222, #000)"
   }
+}
