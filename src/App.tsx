@@ -1,23 +1,22 @@
 import React from 'react';
-import Particles from "react-tsparticles";
-import ParticlesParams from './assets/particles-default.json';
-import logo from './logo.svg';
 import './App.scss';
-import classes from "./Particle.module.scss";
+import { HomeParticles } from './components/Home/HomeParticles';
 
-function App() {
 
-  const params = ParticlesParams as typeof ParticlesParams;
+export const App = () => {
+
 
   return (
-    <div className="App">
-      <Particles
-        className={classes.Particle}
-        options = {params}
-        // options={params as any} 
-      />
-    </div>
+    <>
+      <HomeParticles />
+
+      <div className="App">
+        <label>HIRO'S PORTFOLIO</label>
+      </div>  
+    
+    </>
   );
-}
+
+};
 
 export default App;
