@@ -2,8 +2,8 @@ import React from 'react';
 import type { VFC } from "react";
 import './App.scss';
 import { HomeParticles } from './components/Home/HomeParticles';
-import { HeaderArea } from './components/Home/Header'
-
+import { HeaderArea } from './components/Home/Header';
+import { Menu } from './components/Home/Menu';
 
 export const App : VFC = () => {
 
@@ -16,7 +16,13 @@ export const App : VFC = () => {
         <header>
           <HeaderArea />
         </header>
-      </div>  
+      
+        <main>
+          <Menu />
+        </main>
+      </div>
+
+      
     </>
   );
 

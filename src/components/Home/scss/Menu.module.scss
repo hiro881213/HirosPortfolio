@@ -1,0 +1,21 @@
+.contents {
+    display: flex;
+    flex-wrap: wrap;
+    width: 95vw;
+    z-index: 2;
+    margin-top: 80px;
+
+    .item {
+        border: 2px solid #FFF;
+        color: #FFF;
+        margin-left: 40px;
+        font-size: 45px;
+        width: calc(100vw/4);
+        height: calc(100vw/4);
+        padding: 30px 20px;
+        text-align: center;
+        background-color: aqua;
+        opacity: 0.8;
+    }
+}
+
