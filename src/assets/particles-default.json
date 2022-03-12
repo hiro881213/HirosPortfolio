@@ -1,0 +1,43 @@
+{
+    "bgColor": "#1f201e",
+    "width": 1024,
+    "height": 1024,
+    "emitFrequency": 98,
+    "startX": 606,
+    "startXVariance": 1024,
+    "startY": 864,
+    "startYVariance": 195,
+    "initialDirection": 277,
+    "initialDirectionVariance": 0,
+    "initialSpeed": 0.3,
+    "initialSpeedVariance": 0.8,
+    "friction": 0.009,
+    "accelerationSpeed": "0.142",
+    "accelerationDirection": "275.8",
+    "startScale": 0.18,
+    "startScaleVariance": 0,
+    "finishScale": "0",
+    "finishScaleVariance": "0",
+    "lifeSpan": 270,
+    "lifeSpanVariance": 210,
+    "startAlpha": "1",
+    "startAlphaVariance": "0",
+    "finishAlpha": "0",
+    "finishAlphaVariance": 0.5,
+    "shapeIdList": [
+        "blur_circle",
+        "kirakira2",
+        "star_10"
+    ],
+    "startColor": {
+        "hue": 59,
+        "hueVariance": 28,
+        "saturation": 96,
+        "saturationVariance": 0,
+        "luminance": 33,
+        "luminanceVariance": "16"
+    },
+    "blendMode": true,
+    "alphaCurveType": "1",
+    "VERSION": "1.0.0"
+}
