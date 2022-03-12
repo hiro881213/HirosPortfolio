@@ -5,19 +5,20 @@
   top: 30px;
   left: 60px;
   z-index: 2;
+  opacity: 0.5;
   font-size: 65px;
   font-family: 'Montserrat Subrayada', sans-serif;
 
   .fontRound {
     display: inline-block;
     opacity: 0.8;
-    transition: all 0.3s;
+    transition: all 0.8s;
     color:#FFF;
 
     &:hover {
-      transform: scale(1.1) ;
+      transform: rotateX(360deg) scale(1.1);
       opacity: 1;
-      color:#AAA;
+      color:#FFF;
     }
 
   }
