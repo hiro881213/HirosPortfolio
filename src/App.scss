@@ -5,15 +5,14 @@
   top: 30px;
   left: 60px;
   z-index: 2;
-  color:#FFF;
-  opacity: 0.5;
   font-size: 65px;
   font-family: 'Montserrat Subrayada', sans-serif;
 
   .fontRound {
     display: inline-block;
-    opacity: 0.5;
+    opacity: 0.8;
     transition: all 0.3s;
+    color:#FFF;
 
     &:hover {
       transform: scale(1.1) ;
