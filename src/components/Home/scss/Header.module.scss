@@ -1,0 +1,13 @@
+.fontRound {
+    display: inline-block;
+    opacity: 0.8;
+    transition: all 0.8s;
+    color:#FFF;
+
+    &:hover {
+        transform: rotateX(360deg) scale(1.1);
+        opacity: 1;
+        color:#FFF;
+    }
+
+}

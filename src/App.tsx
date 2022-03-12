@@ -1,9 +1,11 @@
 import React from 'react';
+import type { VFC } from "react";
 import './App.scss';
 import { HomeParticles } from './components/Home/HomeParticles';
+import { HeaderArea } from './components/Home/Header'
 
 
-export const App = () => {
+export const App : VFC = () => {
 
 
   return (
@@ -11,7 +13,9 @@ export const App = () => {
       <HomeParticles />
 
       <div className="App">
-        <span className="fontRound" >HIRO'S PORTFOLIO</span>
+        <header>
+          <HeaderArea />
+        </header>
       </div>  
     </>
   );

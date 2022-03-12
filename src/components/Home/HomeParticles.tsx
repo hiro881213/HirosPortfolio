@@ -1,4 +1,4 @@
-import type { VFC } from "react"
+import type { VFC } from "react";
 import Particles from "react-tsparticles";
 import classes from "./scss/Particle.module.scss";
 import ParticlesParams from '../../assets/particles-default.json';
