@@ -11,9 +11,8 @@ export const App = () => {
       <HomeParticles />
 
       <div className="App">
-        <label>HIRO'S PORTFOLIO</label>
+        <span className="fontRound" >HIRO'S PORTFOLIO</span>
       </div>  
-    
     </>
   );
 
