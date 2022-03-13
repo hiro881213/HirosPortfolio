@@ -8,11 +8,25 @@
 }
 
 .item {
-        
+    
+    position: relative;/*相対配置*/
+
     SPAN {
+        position: absolute;
+        top:-10px;
+        left: -30px;
         color: #FFF;
+        z-index: 5;
+        font-family: 'Montserrat Subrayada', sans-serif;
     }
     
+    IMG {
+        width: 130%;
+        height: 115%;
+        margin-top: -10px;
+        z-index: 4;
+    }
+
     border: 2px solid #FFF;
     margin-left: 50px;
     font-size: 45px;
@@ -20,6 +34,5 @@
     height: calc(100vw/4);
     padding: 30px 20px;
     text-align: center;
-    background-color: aqua;
     opacity: 0.8;
 }
