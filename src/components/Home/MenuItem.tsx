@@ -9,7 +9,7 @@ export const MenuItem = (props: any) => {
     const fade = props.mode === 'up' ? classes.fadeUp : classes.fadeDown;
 
     return (
-        <>
+        <a href = './script'>
             <div className={`${classes.item} ${fade}`} style ={style}>
                 <span className = {classes.title}>{props.children}</span>
                 
@@ -17,11 +17,12 @@ export const MenuItem = (props: any) => {
                     <img src={props.image} alt="picture" />
 
                     <div className = {classes.sentenceAll}>
-                        <span className = {classes.oneSentence}>脚本作品が表示されます</span>
-                        <span className = {classes.twoSentence}>Read More →→</span>
+                        <span className = {classes.oneSentence}>{props.message}</span>
+                        <span className = {classes.twoSentence}>{props.read}</span>
                     </div>
+
                 </figure>
             </div>
-        </>
+        </a>
     );
 }

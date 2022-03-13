@@ -1,0 +1,10 @@
+{
+
+    "ScriptMessage": "脚本作品が表示されます",
+    "ScriptRead" : "Read More →→",
+
+    "GraphicMessage":"グラフィック作品が表示されます",
+    "GraphicRead" : "Read More →→",
+    "programMessage": "工事中",
+    "programRead" : "作成完了までお待ちください"
+}

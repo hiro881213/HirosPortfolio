@@ -31,7 +31,7 @@
         top:100px;
         left: 50px;
         font-size: 20px;
-        color: #000;
+        color: #202020;
         background-color: #FFF;
         padding: 10px;
         font-family: "Times New Roman", "YuMincho", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif;
@@ -41,7 +41,7 @@
         top:200px;
         left: 50px;
         font-size: 20px;
-        color: #000;
+        color: #202020;
         background-color: #FFF;
         padding: 10px;
         font-family: "Times New Roman", "YuMincho", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif;
@@ -139,7 +139,7 @@ FIGURE IMG {
 FIGURE:hover {
 
     .sentenceAll {
-        opacity: 1;
+        opacity: 0.8;
         transition: .5s ease-in-out;
     }
 

@@ -5,6 +5,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.scss';
 
 import { HomeMain } from './components/Home/HomeMain';
+import { ScriptMain } from './components/Script/ScriptMain';
 
 export const App : VFC = () => {
 
@@ -15,6 +16,7 @@ export const App : VFC = () => {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<HomeMain />} ></Route>
+          <Route path="/script" element={<ScriptMain />} ></Route>
         </Routes>
         </BrowserRouter>
     </>
