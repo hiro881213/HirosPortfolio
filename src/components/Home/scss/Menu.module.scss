@@ -4,7 +4,7 @@
     width: 95vw;
     z-index: 2;
     margin-top: 80px;
-    margin-left: -20px;
+    margin-left: 0px;
 }
 
 .item {
@@ -21,18 +21,24 @@
     }
     
     IMG {
-        width: 130%;
-        height: 115%;
+        width: 110%;
+        height: 125%;
         margin-top: -10px;
         z-index: 4;
+        opacity: 0.5;
     }
 
     border: 2px solid #FFF;
-    margin-left: 50px;
+    
     font-size: 45px;
     width: calc(100vw/4);
-    height: calc(100vw/4);
+    height: calc(100vh/3);
     padding: 30px 20px;
     text-align: center;
     opacity: 0.8;
+
+    .second {
+        margin-left: 70px;
+    }
+
 }
