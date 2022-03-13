@@ -11,7 +11,12 @@ export const MenuItem = (props: any) => {
     return (
         <>
             <div className={`${classes.item} ${fade}`} style ={style}>
-                <span>{props.children}</span>
+                <span className = {classes.title}>{props.children}</span>
+                
+                <span className = {classes.oneSentence}>脚本作品が表示されます</span>
+                <span className = {classes.twoSentence}>Read More →→</span>
+
+                
                 <figure>
                     <img src={props.image} alt="picture" />
                 </figure>

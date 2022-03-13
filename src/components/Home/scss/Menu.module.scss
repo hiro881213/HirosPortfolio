@@ -15,16 +15,39 @@
 
     SPAN {
         position: absolute;
-        top:-10px;
-        left: -30px;
         color: #FFF;
         z-index: 5;
-        font-family: 'Itim', cursive;
+        
     }
     
+    .title {
+        top:-10px;
+        left: -30px;
+        font-family: 'Itim', cursive;
+        font-size: 50px;
+    }
+
+    .oneSentence {
+        top:100px;
+        left: 50px;
+        font-size: 20px;
+        color: #000;
+        background-color: #FFF;
+        padding: 10px;
+        font-family: "Times New Roman", "YuMincho", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif;
+    }
+
+    .twoSentence {
+        top:200px;
+        left: 50px;
+        font-size: 20px;
+        color: #000;
+        background-color: #FFF;
+        padding: 10px;
+        font-family: "Times New Roman", "YuMincho", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif;
+    }
+
     border: 2px solid #FFF;
-    
-    font-size: 50px;
     width: calc(100vw/4);
     height: calc(100vh/3);
     padding: 30px 20px;
@@ -48,6 +71,12 @@
         visibility: hidden;
         transition: .3s;
         margin-left: -30px;
+
+        .contentDetail {
+            display: block;
+        }
+    
+
     }
 
     &:hover::after {
@@ -55,7 +84,6 @@
         opacity: 0.8;
         visibility: visible;
     }
-    
 
 }
 
