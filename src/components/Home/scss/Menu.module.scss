@@ -72,11 +72,6 @@
         transition: .3s;
         margin-left: -30px;
 
-        .contentDetail {
-            display: block;
-        }
-    
-
     }
 
     &:hover::after {
@@ -126,6 +121,10 @@
     }
 }
 
+.sentenceAll {
+    opacity: 0;
+}
+
 FIGURE IMG {
     opacity: 1;
     -webkit-transition: .3s ease-in-out;
@@ -137,6 +136,16 @@ FIGURE IMG {
     z-index: 4;
 }
 
-FIGURE:hover IMG {
-    opacity: .5;
+FIGURE:hover {
+
+    .sentenceAll {
+        opacity: 1;
+        transition: .5s ease-in-out;
+    }
+
+    IMG {
+        opacity: .5;
+    }
+    
+
 }
