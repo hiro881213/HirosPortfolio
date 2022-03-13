@@ -1,28 +1,22 @@
 import React from 'react';
 import type { VFC } from "react";
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
 import './App.scss';
-import { HomeParticles } from './components/Home/HomeParticles';
-import { HeaderArea } from './components/Home/Header';
-import { Menu } from './components/Home/Menu';
+
+import { HomeMain } from './components/Home/HomeMain';
 
 export const App : VFC = () => {
 
 
   return (
     <>
-      <HomeParticles />
 
-      <div className="App">
-        <header>
-          <HeaderArea />
-        </header>
-      
-        <main>
-          <Menu />
-        </main>
-      </div>
-
-      
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<HomeMain />} ></Route>
+        </Routes>
+        </BrowserRouter>
     </>
   );
 
