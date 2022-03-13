@@ -1,4 +1,5 @@
 import type { VFC } from "react";
+import { MenuItem } from './MenuItem';
 import classes from './scss/Menu.module.scss';
 
 export const Menu: VFC = () => {
@@ -6,18 +7,9 @@ export const Menu: VFC = () => {
     return(
         <>  
             <div className={classes.contents}>
-                <div className={classes.item}>
-                    <span>Script</span>
-                </div>
-
-                <div className={classes.item}>
-                    <span>Graphic</span>
-                </div>
-
-                <div className={classes.item}>
-                    <span>Programming</span>
-                </div>
-
+                <MenuItem>Script</MenuItem>
+                <MenuItem>Graphic</MenuItem>
+                <MenuItem>Programming</MenuItem>
             </div>
         </>
     )

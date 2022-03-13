@@ -4,18 +4,22 @@
     width: 95vw;
     z-index: 2;
     margin-top: 80px;
-
-    .item {
-        border: 2px solid #FFF;
-        color: #FFF;
-        margin-left: 40px;
-        font-size: 45px;
-        width: calc(100vw/4);
-        height: calc(100vw/4);
-        padding: 30px 20px;
-        text-align: center;
-        background-color: aqua;
-        opacity: 0.8;
-    }
+    margin-left: -20px;
 }
 
+.item {
+        
+    SPAN {
+        color: #FFF;
+    }
+    
+    border: 2px solid #FFF;
+    margin-left: 50px;
+    font-size: 45px;
+    width: calc(100vw/4);
+    height: calc(100vw/4);
+    padding: 30px 20px;
+    text-align: center;
+    background-color: aqua;
+    opacity: 0.8;
+}
