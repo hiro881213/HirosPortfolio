@@ -11,9 +11,9 @@ export const Menu: VFC = () => {
     return(
         <>  
             <div className={classes.contents}>
-                <MenuItem image = {scriptImageUrl} marginContents = "0px">Script</MenuItem>
-                <MenuItem image = {graphicImageUrl} marginContents = "60px">Graphic</MenuItem>
-                <MenuItem image = {programImageUrl} marginContents = "60px">Programming</MenuItem>
+                <MenuItem image = {scriptImageUrl}  marginContents = "0px"  mode = 'up'>Script</MenuItem>
+                <MenuItem image = {graphicImageUrl} marginContents = "60px" mode = 'down'>Graphic</MenuItem>
+                <MenuItem image = {programImageUrl} marginContents = "60px" mode = 'up'>Programming</MenuItem>
             </div>
         </>
     )
