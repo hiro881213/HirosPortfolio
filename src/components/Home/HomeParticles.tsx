@@ -10,7 +10,7 @@ export const HomeParticles: VFC = () => {
 
     // 乱数を生成する
     const min = 1 ;
-    const max = 10 ;
+    const max = 9 ;
 
     const randomVal = Math.floor( Math.random() * (max + 1 - min) ) + min ;
 
