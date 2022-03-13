@@ -14,7 +14,7 @@ export const HomeParticles: VFC = () => {
 
     const randomVal = Math.floor( Math.random() * (max + 1 - min) ) + min ;
 
-    let targetJSON;
+    let targetJSON = {};
 
     if (randomVal <= 3) {
 

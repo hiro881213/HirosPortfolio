@@ -9,7 +9,7 @@ export const MenuItem = (props: any) => {
     const fade = props.mode === 'up' ? classes.fadeUp : classes.fadeDown;
 
     return (
-        <a href = './script'>
+        <a href = {props.src}>
             <div className={`${classes.item} ${fade}`} style ={style}>
                 <span className = {classes.title}>{props.children}</span>
                 
