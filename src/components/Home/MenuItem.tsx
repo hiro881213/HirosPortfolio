@@ -12,7 +12,9 @@ export const MenuItem = (props: any) => {
         <>
             <div className={`${classes.item} ${fade}`} style ={style}>
                 <span>{props.children}</span>
-                <img src={props.image} alt="picture" />
+                <figure>
+                    <img src={props.image} alt="picture" />
+                </figure>
             </div>
         </>
     );
