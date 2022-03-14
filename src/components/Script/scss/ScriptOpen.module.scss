@@ -1,6 +1,6 @@
 .shutter{
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     position:fixed;
     top:0;
     left:0;
@@ -15,11 +15,9 @@
 
 .logo {
     position: absolute;
-    width: 120px;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    width: 100vw;
+    top: 50vw;
+    left: 50vh;
     margin: auto;
     -webkit-animation: logo 0.8s forwards;
     animation: logo 0.8s forwards;

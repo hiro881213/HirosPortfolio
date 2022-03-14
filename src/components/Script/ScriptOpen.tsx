@@ -4,7 +4,9 @@ export const ScriptOpen = () => {
     return (
         <>
             <div className={classes.shutter}>
-                <label className="logo">Script</label>
+                <div className="container">
+                    <p className="btn">Sript〜脚本作品集〜</p>
+                </div>
             </div>
         </>
     );

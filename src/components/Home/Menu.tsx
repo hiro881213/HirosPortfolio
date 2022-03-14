@@ -27,7 +27,7 @@ export const Menu: VFC = () => {
                     image = {graphicImageUrl} 
                     marginContents = "60px" 
                     mode = 'down'
-                    src = '/'
+                    src = './'
                     message = {labelMessage.GraphicMessage} 
                     read = {labelMessage.GraphicRead}>Graphic</MenuItem>
 
@@ -35,7 +35,7 @@ export const Menu: VFC = () => {
                     image = {programImageUrl} 
                     marginContents = "60px" 
                     mode = 'up'
-                    src = '/'
+                    src = './'
                     message = {labelMessage.programMessage} 
                     read = {labelMessage.programRead}>Programming</MenuItem>
             </div>

@@ -9,14 +9,15 @@ import { ScriptMain } from './components/Script/ScriptMain';
 
 export const App : VFC = () => {
 
+  const baseURL = "/portfolio"
 
   return (
     <>
 
-      <BrowserRouter>
+    <BrowserRouter basename={baseURL}>
         <Routes>
-          <Route path="/" element={<HomeMain />} ></Route>
-          <Route path="/script" element={<ScriptMain />} ></Route>
+          <Route path='/' element={<HomeMain />} ></Route>
+          <Route path={`/script`} element={<ScriptMain />} ></Route>
         </Routes>
         </BrowserRouter>
     </>
