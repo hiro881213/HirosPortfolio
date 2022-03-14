@@ -23,7 +23,8 @@ export const Menu: VFC = () => {
                     marginContents = "0px"  
                     mode = 'up'
                     marginTop = "120px"
-                    src = {`${baseURL}script`}
+                    src = {baseURL}
+                    // src = {`${baseURL}script`}
                     message = {labelMessage.ScriptMessage} 
                     read = {labelMessage.ScriptRead}>Script</MenuItem>
 

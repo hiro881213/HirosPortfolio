@@ -19,7 +19,7 @@ export const App : VFC = () => {
     <BrowserRouter basename={baseURL}>
         <Routes>
           <Route path='/' element={<HomeMain />} ></Route>
-          <Route path={`/script`} element={<ScriptMain />} ></Route>
+          <Route path='script' element={<ScriptMain />} ></Route>
         </Routes>
         </BrowserRouter>
     </>

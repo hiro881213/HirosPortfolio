@@ -7,9 +7,7 @@ export const getUrl = () => {
         return '';
 
     } else {
-
         return "/portfolio";
-
     }
 
 }
