@@ -43,7 +43,11 @@
       "last 1 safari version"
     ]
   },
-
-  "homepage": "./"
-
+  "homepage": "./",
+  "devDependencies": {
+    "@types/styled-components": "^5.1.24",
+    "babel-plugin-styled-components": "^2.0.6",
+    "cross-env": "^7.0.3",
+    "styled-components": "^5.3.3"
+  }
 }
