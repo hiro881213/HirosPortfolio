@@ -4,6 +4,7 @@ export const MenuItem = (props: any) => {
 
     const style = {
         marginLeft: props.marginContents,
+        marginTop: props.marginTop
     };
 
     const fade = props.mode === 'up' ? classes.fadeUp : classes.fadeDown;

@@ -11,6 +11,8 @@ import programImageUrl from "../../assets/img/ProgramImage.jpg";
 export const Menu: VFC = () => {
 
     const labelMessage = message;
+    const baseURL = "./portfolio"
+
 
     return(
         <>  
@@ -19,7 +21,8 @@ export const Menu: VFC = () => {
                     image = {scriptImageUrl}  
                     marginContents = "0px"  
                     mode = 'up'
-                    src = './script'
+                    marginTop = "120px"
+                    src = {`${baseURL}/script`}
                     message = {labelMessage.ScriptMessage} 
                     read = {labelMessage.ScriptRead}>Script</MenuItem>
 
@@ -27,7 +30,8 @@ export const Menu: VFC = () => {
                     image = {graphicImageUrl} 
                     marginContents = "60px" 
                     mode = 'down'
-                    src = './'
+                    marginTop = "-20px"
+                    src = {baseURL}
                     message = {labelMessage.GraphicMessage} 
                     read = {labelMessage.GraphicRead}>Graphic</MenuItem>
 
@@ -35,7 +39,8 @@ export const Menu: VFC = () => {
                     image = {programImageUrl} 
                     marginContents = "60px" 
                     mode = 'up'
-                    src = './'
+                    marginTop = "120px"
+                    src = {baseURL}
                     message = {labelMessage.programMessage} 
                     read = {labelMessage.programRead}>Programming</MenuItem>
             </div>
