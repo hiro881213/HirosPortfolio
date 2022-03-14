@@ -48,8 +48,8 @@
     }
 
     border: 2px solid #FFF;
-    width: calc(100vw/4);
-    height: calc(100vh/3);
+    width: 25vw;
+    height: 33vh;
     padding: 30px 20px;
     text-align: center;
     opacity: 0.8;
@@ -127,10 +127,11 @@
 
 FIGURE IMG {
     opacity: 1;
+    padding: 0;
     -webkit-transition: .3s ease-in-out;
     transition: .3s ease-in-out;
-    width: 405px;
-    height: calc((100vh + 180px)/3);
+    width: 30vw;
+    height: 38vh;
     margin-top: -60px;
     margin-left: -36px;
     z-index: 4;

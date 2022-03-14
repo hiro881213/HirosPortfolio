@@ -4,6 +4,8 @@ import classes from './scss/Menu.module.scss';
 
 import message from '../../assets/textLabels/textlabelMenu.json';
 
+import { getUrl } from '../../CommonUtil';
+
 import scriptImageUrl from "../../assets/img/ScriptImage.jpg";
 import graphicImageUrl from "../../assets/img/GraphicImage.jpg";
 import programImageUrl from "../../assets/img/ProgramImage.jpg";
@@ -11,8 +13,7 @@ import programImageUrl from "../../assets/img/ProgramImage.jpg";
 export const Menu: VFC = () => {
 
     const labelMessage = message;
-    const baseURL = "./portfolio"
-
+    let baseURL = "./";
 
     return(
         <>  
@@ -22,7 +23,7 @@ export const Menu: VFC = () => {
                     marginContents = "0px"  
                     mode = 'up'
                     marginTop = "120px"
-                    src = {`${baseURL}/script`}
+                    src = {`${baseURL}script`}
                     message = {labelMessage.ScriptMessage} 
                     read = {labelMessage.ScriptRead}>Script</MenuItem>
 

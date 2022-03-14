@@ -4,12 +4,14 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import './App.scss';
 
+import { getUrl } from './CommonUtil';
+
 import { HomeMain } from './components/Home/HomeMain';
 import { ScriptMain } from './components/Script/ScriptMain';
 
 export const App : VFC = () => {
 
-  const baseURL = "/portfolio"
+  const baseURL = getUrl();
 
   return (
     <>
