@@ -14,7 +14,7 @@ export const HomeMain = () => {
                     <HeaderArea />
                 </header>
 
-                <main>
+                <main style ={{width: "95vw"}}>
                     <Menu />
                 </main>
             </div>

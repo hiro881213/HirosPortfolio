@@ -2,13 +2,12 @@
 
 .contents {
     display: flex;
-    flex-wrap: wrap;
-    width: 95vw;
-    z-index: 2;
-    margin-top: 20%;
-    margin-left: 25px;
-    margin-right: 25px;
     min-width: 1250px;
+    width: 70vw;
+    height: 65vh;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
 }
 
 .item {
@@ -27,6 +26,7 @@
         left: -30px;
         font-family: 'Itim', cursive;
         font-size: 50px;
+        font-weight: bold;
     }
 
     .oneSentence {
