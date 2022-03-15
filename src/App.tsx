@@ -15,10 +15,15 @@ export const App : VFC = () => {
       <Routes>
         <Route path='/' element={<HomeMain />} ></Route>
         <Route path='script' element={<ScriptMain />} ></Route>
+        <Route path="*" element={<NotFoundPage />} />
       </Routes>
     </>
   );
 
+};
+
+const NotFoundPage = () => {
+  return(<><p>AAAA</p></>);
 };
 
 export default App;

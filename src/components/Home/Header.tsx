@@ -1,15 +1,17 @@
 import type { VFC } from "react";
+import { Link } from 'react-router-dom';
+
 import classes from './scss/Header.module.scss';
 
 export const HeaderArea: VFC = () => {
 
-    const baseURL = "/portfolio"
+    const baseURL = "./"
 
     return(
         <>  
-            <a href = {baseURL}>
+            <Link to = {baseURL}>
                 <span className={classes.fontRound} >HIRO'S PORTFOLIO</span>
-            </a>
+            </Link>
         </>
     );
 

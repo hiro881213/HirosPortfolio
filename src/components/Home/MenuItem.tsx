@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 import classes from './scss/Menu.module.scss';
 
 export const MenuItem = (props: any) => {
@@ -10,7 +12,7 @@ export const MenuItem = (props: any) => {
     const fade = props.mode === 'up' ? classes.fadeUp : classes.fadeDown;
 
     return (
-        <a href = {props.src}>
+        <Link to = {props.src}>
             <div className={`${classes.item} ${fade}`} style ={style}>
                 <span className = {classes.title}>{props.children}</span>
                 
@@ -24,6 +26,6 @@ export const MenuItem = (props: any) => {
 
                 </figure>
             </div>
-        </a>
+        </Link>
     );
 }
