@@ -22,7 +22,7 @@ export const Menu: VFC = () => {
                     image = {scriptImageUrl}  
                     marginContents = "0px"  
                     mode = 'up'
-                    marginTop = "120px"
+                    marginTop = "40px"
                     src = {baseURL}
                     // src = {`${baseURL}script`}
                     message = {labelMessage.ScriptMessage} 
@@ -30,7 +30,7 @@ export const Menu: VFC = () => {
 
                 <MenuItem 
                     image = {graphicImageUrl} 
-                    marginContents = "60px" 
+                    marginContents = "30%" 
                     mode = 'down'
                     marginTop = "-20px"
                     src = {baseURL}
@@ -39,9 +39,9 @@ export const Menu: VFC = () => {
 
                 <MenuItem 
                     image = {programImageUrl} 
-                    marginContents = "60px" 
+                    marginContents = "65%" 
                     mode = 'up'
-                    marginTop = "120px"
+                    marginTop = "40px"
                     src = {baseURL}
                     message = {labelMessage.programMessage} 
                     read = {labelMessage.programRead}>Programming</MenuItem>
