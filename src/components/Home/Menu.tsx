@@ -32,7 +32,7 @@ export const Menu: VFC = () => {
                     marginContents = "0px"
                     mode = 'down'
                     marginTop = "20px"
-                    src = {baseURL}
+                    src = {`${baseURL}graphic`}
                     message = {labelMessage.GraphicMessage} 
                     read = {labelMessage.GraphicRead}>Graphic</MenuItem>
 

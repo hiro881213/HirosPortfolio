@@ -6,6 +6,7 @@ import './App.scss';
 
 import { HomeMain } from './components/Home/HomeMain';
 import { ScriptMain } from './components/Script/ScriptMain';
+import { GraphicMain } from './components/Graphic/GraphicMain';
 
 export const App : VFC = () => {
 
@@ -15,6 +16,7 @@ export const App : VFC = () => {
       <Routes>
         <Route path='/' element={<HomeMain />} ></Route>
         <Route path='script' element={<ScriptMain />} ></Route>
+        <Route path='graphic' element={<GraphicMain />} ></Route>
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
     </>
