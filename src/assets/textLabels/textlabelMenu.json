@@ -3,8 +3,8 @@
     "ScriptMessage": "脚本作品が表示される予定です",
     "ScriptRead" : "作成完了までお待ちください",
 
-    "GraphicMessage":"グラフィック作品が表示される予定です",
-    "GraphicRead" : "作成完了までお待ちください",
+    "GraphicMessage":"グラフィック作品が表示されます",
+    "GraphicRead" : "READ MORE >>",
 
     "programMessage": "工事中",
     "programRead" : "作成完了までお待ちください"
