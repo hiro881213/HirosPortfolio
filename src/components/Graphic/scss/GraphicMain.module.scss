@@ -37,10 +37,13 @@
 .mainClass {
     background-color: #F2F2F2;
     margin-top: 120px;
+    text-align: center;
+    display: grid;
+    place-items: center;
 
     .worksArea {
-        display: grid;
-        place-items: center;
+        background-color: #f1ffef;
+        width: 80%;
 
         DIV {
 
@@ -49,8 +52,8 @@
             margin-bottom: 60px;
 
             IMG {
-                width: 40%;
-                height: 40%;
+                width: 50%;
+                height: 50%;
             }
     
         }
