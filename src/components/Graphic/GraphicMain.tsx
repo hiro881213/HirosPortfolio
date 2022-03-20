@@ -22,7 +22,7 @@ export const GraphicMain = () => {
                 </div>
             </header>
 
-            <main className = {classes.mainClass}>
+            <main className = {`${classes.mainClass} ${classes.fadeUp}`}>
                 <div className = {classes.worksArea}>
                     { 
                         (() => {

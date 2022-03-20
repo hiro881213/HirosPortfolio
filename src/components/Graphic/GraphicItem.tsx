@@ -5,7 +5,7 @@ export const GraphicItem = (props: any) => {
 
     return (
         <>
-            <div className = {classes.item}>
+            <div className = {`${classes.item}`}>
                 <img src= {props.pictUrl} alt="picture" />
             </div>
         </>
