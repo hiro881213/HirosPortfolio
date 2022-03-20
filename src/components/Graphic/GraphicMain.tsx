@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom';
 
+import { GraphicItem } from './GraphicItem';
 import classes from './scss/GraphicMain.module.scss';
+
 import IMG1 from '../../assets/img/ProgramImage.jpg'
 import IMG2 from '../../assets/img/GraphicImage.jpg'
 import IMG3 from '../../assets/img/ScriptImage.jpg'
@@ -18,18 +20,9 @@ export const GraphicMain = () => {
 
             <main className = {classes.mainClass}>
                 <div className = {classes.worksArea}>
-                    <div>
-                        <img src= {IMG1} alt="picture" />
-                    </div>
-
-                    <div>
-                        <img src= {IMG2} alt="picture" />
-                    </div>
-
-                    <div>
-                        <img src= {IMG3} alt="picture" />
-                    </div>
-
+                    <GraphicItem pictUrl = {IMG1}></GraphicItem>
+                    <GraphicItem pictUrl = {IMG2}></GraphicItem>
+                    <GraphicItem pictUrl = {IMG3}></GraphicItem>
                 </div>
             </main>
             <footer>
