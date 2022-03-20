@@ -1,0 +1,25 @@
+.mainClass {
+    background-color: #F2F2F2;
+    text-align: center;
+    display: grid;
+    place-items: center;
+    z-index: 0;
+    height: 100%;
+
+    // .worksArea {
+    //     background-color: #f1ffef;
+    //     width: 80%;
+    // }
+
+    LABEL {
+        -ms-writing-mode: tb-rl;
+	    writing-mode: vertical-rl;
+        text-orientation: sideways;
+        font-size: 100px;
+        font-family: 'Tsukushi B Round Gothic'; font-weight: normal;
+//        font-family: 'YuMincho +36p Kana';
+        color: #313131;
+        font-weight: 100;
+    }
+
+}
