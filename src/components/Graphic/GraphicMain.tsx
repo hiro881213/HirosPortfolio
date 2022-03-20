@@ -3,12 +3,16 @@ import { Link } from 'react-router-dom';
 import { GraphicItem } from './GraphicItem';
 import classes from './scss/GraphicMain.module.scss';
 
-import IMG1 from '../../assets/img/ProgramImage.jpg'
-import IMG2 from '../../assets/img/GraphicImage.jpg'
-import IMG3 from '../../assets/img/ScriptImage.jpg'
-
-
 export const GraphicMain = () => {
+
+    // ファイル読み込み処理
+    const importAll = (r: __WebpackModuleApi.RequireContext) => {
+        return r.keys().map(v => r(v) as string);
+    }
+    
+    // Graphicsディレクトリの内部を全て取り出す
+    const images = importAll(require.context('../../assets/graphics', true, /\.(jpg)$/));
+
     return (
         <>
             <header className = {classes.headerClass}>
@@ -20,9 +24,21 @@ export const GraphicMain = () => {
 
             <main className = {classes.mainClass}>
                 <div className = {classes.worksArea}>
-                    <GraphicItem pictUrl = {IMG1}></GraphicItem>
-                    <GraphicItem pictUrl = {IMG2}></GraphicItem>
-                    <GraphicItem pictUrl = {IMG3}></GraphicItem>
+                    { 
+                        (() => {
+
+                            // ファイル一覧リストを生成する
+                            const items: any[] = [];
+
+                            // ファイル一覧リストに各画像をセットする
+                            images.forEach( (image:any) => {
+                                items.push(<GraphicItem pictUrl = {image}></GraphicItem>)
+                            });
+
+                            return items;
+                        
+                        })()
+                    }
                 </div>
             </main>
             <footer>
