@@ -1,6 +1,6 @@
-import { Link } from 'react-router-dom';
-
 import { GraphicItem } from './GraphicItem';
+import { HomeLogo } from './HomeLogo';
+
 import classes from './scss/GraphicMain.module.scss';
 
 export const GraphicMain = () => {
@@ -41,8 +41,15 @@ export const GraphicMain = () => {
                     }
                 </div>
             </main>
+            
+            <div className = {classes.homeLogoArea}>
+                <HomeLogo />
+            </div>
+
             <footer>
-                <Link to = '/'>HOME</Link>
+                <div>
+                    <p>Copyright 2021-2022 Hiro all right reserved.</p>
+                </div>
             </footer>
         </>
     );

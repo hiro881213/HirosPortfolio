@@ -1,6 +1,5 @@
 import classes from './scss/GraphicItem.module.scss'
 
-
 // グラフィック項目コンポーネント
 export const GraphicItem = (props: any) => {
 
@@ -9,7 +8,6 @@ export const GraphicItem = (props: any) => {
             <div className = {classes.item}>
                 <img src= {props.pictUrl} alt="picture" />
             </div>
-
         </>
     );
 

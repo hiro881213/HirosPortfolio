@@ -1,3 +1,5 @@
+@import url('http://fonts.cdnfonts.com/css/din-condensed');
+
 .headerClass {
     top: 0;
     left: 0;
@@ -19,7 +21,7 @@
 
         P {
             font-size: 40px;
-            font-family: Didot;
+            font-family: 'DIN Condensed', sans-serif;
             margin: 0px;
             font-weight: bold;
         }
@@ -44,6 +46,39 @@
     .worksArea {
         background-color: #f1ffef;
         width: 80%;
+    }
+
+}
+
+.homeLogoArea {
+    text-decoration: none;
+    background-color: #ffffd6;
+    bottom : 30px;
+    right: 20px;
+    position:fixed;
+    width : 210px;
+    height: 80px;
+    border-radius: 80px;
+    border: 1px solid #242424;
+    opacity: 0.8;
+}
+
+FOOTER {
+    width: 100%;
+    height: 60px;
+    background-color: #242424;
+
+    DIV {
+        text-align: center;
+        display: grid;
+        place-items: center;
+
+        P { 
+            font-size: 16px;
+            color : #F1FFEF;
+            font-family: Didot;
+            font-weight: bold;
+        }
     }
 
 }
