@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 
 import classes from "./scss/ScriptList.module.scss"
 
-import story1 from '../../assets/scenario/story1/page1.jpg';
-import story2 from '../../assets/scenario/story2/page1.jpg';
+import story1 from '../../assets/scenario/story1/page01.jpg';
+import story2 from '../../assets/scenario/story2/page01.jpg';
 
 export const ScriptList = () => {
 
@@ -27,7 +27,11 @@ export const ScriptList = () => {
                     </Link>
                 </div>
                 
-                <div><img src={story2} alt = {"scenario2"} className={classes.scriptImg} /></div>
+                <div>
+                    <Link to = {`${baseURL}detailScenario?story=2`}>
+                        <img src={story2} alt = {"scenario2"} className={classes.scriptImg} />
+                    </Link>
+                </div>
             </Slider>
         </>
     );
