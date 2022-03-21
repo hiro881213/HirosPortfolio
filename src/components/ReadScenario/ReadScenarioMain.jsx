@@ -1,8 +1,6 @@
 import React from 'react'
-
 import { useLocation } from 'react-router-dom';
 import HTMLFlipBook from "react-pageflip";
-
 import PAGE1 from '../../assets/scenario/story1/page1.jpg';
 import PAGE2 from '../../assets/scenario/story1/page2.jpg';
 import PAGE3 from '../../assets/scenario/story1/page3.jpg';
@@ -24,8 +22,6 @@ export const ReadScenarioMain = (props) => {
 
     // // Graphicsディレクトリの内部を全て取り出す
     // const images = importAll(require.context(`../../assets/scenario/story${target}`, true, /\.(jpg)$/));
-
-    alert(`../../assets/scenario/story${target}`);
 
     // Pageを定義する
     const Page = React.forwardRef((props, ref={ref}) => {
