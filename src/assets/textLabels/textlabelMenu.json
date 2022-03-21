@@ -1,7 +1,7 @@
 {
 
-    "ScriptMessage": "脚本作品が表示される予定です",
-    "ScriptRead" : "作成完了までお待ちください",
+    "ScriptMessage": "脚本作品が表示されます",
+    "ScriptRead" : "READ MORE >>",
 
     "GraphicMessage":"グラフィック作品が表示されます",
     "GraphicRead" : "READ MORE >>",

@@ -2,7 +2,8 @@
     background-color: #F2F2F2;
     text-align: center;
     place-items: center;
-    height: 100vh;
+    height: calc(100vh - 50px);
+    overflow: hidden;
 
     LABEL {
         position: fixed;
@@ -60,3 +61,10 @@
     opacity: 0.8;
 }
 
+.fadeUp{
+    
+    animation-name:fadeUpAnime;
+    animation-duration:1s;
+    animation-fill-mode:forwards;
+    opacity:0;
+}

@@ -25,7 +25,7 @@ export const App : VFC = () => {
 };
 
 const NotFoundPage = () => {
-  return(<><p>AAAA</p></>);
+  return(<><p>Not Found</p></>);
 };
 
 export default App;

@@ -6,7 +6,7 @@ export const GraphicItem = (props: any) => {
     return (
         <>
             <div className = {`${classes.item}`}>
-                <img src= {props.pictUrl} alt="picture" />
+                <img className = {classes.scriptIMG} src= {props.pictUrl} alt="picture" />
             </div>
         </>
     );

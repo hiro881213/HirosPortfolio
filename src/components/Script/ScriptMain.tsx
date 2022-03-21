@@ -23,6 +23,12 @@ export const ScriptMain = () => {
             <div className = {classes.homeLogoArea}>
                 <HomeLogo />
             </div>
+
+            <footer>
+                <div>
+                    <p>Copyright 2021-2022 Hiro all right reserved.</p>
+                </div>
+            </footer>
         </>
     )
 }

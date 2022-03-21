@@ -25,7 +25,7 @@ export const Menu: VFC = () => {
                     marginTop = "-100px"
                     src = {`${baseURL}script`}
                     message = {labelMessage.ScriptMessage} 
-                    read = {labelMessage.ScriptRead}>Script</MenuItem>
+                    read = {labelMessage.ScriptRead}>Scenario</MenuItem>
 
                 <MenuItem 
                     image = {graphicImageUrl} 
