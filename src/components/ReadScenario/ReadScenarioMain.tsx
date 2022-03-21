@@ -1,4 +1,7 @@
+import { Link } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
+
+import classes from './scss/ReadScenarioMain.module.scss'
 
 export const ReadScenarioMain = (props:any) => {
 
@@ -6,9 +9,14 @@ export const ReadScenarioMain = (props:any) => {
     const params = new URLSearchParams(useLocation().search);
     const target = params.get('story')
 
+    const baseURL = "../"
+
     return (
         <>
-            <label>シナリオを読もう</label>
+            <main className={classes.readScinario}>
+                <Link to = {`${baseURL}/script`}>戻る</Link>
+                <label>シナリオを読もう</label>
+            </main>
         </>
     );
 }
