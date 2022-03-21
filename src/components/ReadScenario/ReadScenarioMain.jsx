@@ -23,7 +23,8 @@ export const ReadScenarioMain = (props) => {
         let lstImages = [];
 
         if (target === '1') {
-            lstImages = importAll(require.context('../../assets/scenario/story1/', true, /\.(jpg)$/));
+            lstImages = importAll(require.context('../../assets/scenario/story01/', true, /\.(jpg)$/));
+
         } else if (target === '2') {
             lstImages = importAll(require.context('../../assets/scenario/story2/', true, /\.(jpg)$/));
             console.log(lstImages);
