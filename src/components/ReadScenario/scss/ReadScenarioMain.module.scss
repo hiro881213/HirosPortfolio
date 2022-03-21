@@ -1,5 +1,13 @@
 .readScinario {
     width: 100vw;
-    height: 100vh;
     background-color: aliceblue;
+    text-align: center;
+    display: grid;
+    place-items: center;
+
+    IMG {
+        width : 60%;
+        height: 60%;
+    }
+
 }

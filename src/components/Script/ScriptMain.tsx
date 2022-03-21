@@ -5,12 +5,6 @@ import { ScriptList } from './ScriptList';
 
 export const ScriptMain = () => {
 
-    let title = '脚本作品集';
-    
-    //DOM取得
-    const text = document.querySelector('.text');
-
-
     return (
         <>
             <main className={classes.mainClass}>

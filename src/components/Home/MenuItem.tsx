@@ -17,7 +17,7 @@ export const MenuItem = (props: any) => {
                 <span className = {classes.title}>{props.children}</span>
                 
                 <figure>
-                    <img src={props.image} alt="picture" />
+                    <img src={props.image} alt= {"menuImage"} />
 
                     <div className = {classes.sentenceAll}>
                         <span className = {classes.oneSentence}>{props.message}</span>

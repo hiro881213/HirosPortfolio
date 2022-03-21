@@ -4,8 +4,6 @@ import classes from './scss/Menu.module.scss';
 
 import message from '../../assets/textLabels/textlabelMenu.json';
 
-import { getUrl } from '../../CommonUtil';
-
 import scriptImageUrl from "../../assets/img/ScriptImage.jpg";
 import graphicImageUrl from "../../assets/img/GraphicImage.jpg";
 import programImageUrl from "../../assets/img/ProgramImage.jpg";

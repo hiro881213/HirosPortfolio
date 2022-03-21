@@ -23,11 +23,11 @@ export const ScriptList = () => {
             <Slider {...settings}>
                 <div>
                     <Link to = {`${baseURL}detailScenario?story=1`}>
-                        <img src={story1} alt="picture" className={classes.scriptImg} />
+                        <img src={story1} alt = {"scenario1"} className={classes.scriptImg} />
                     </Link>
                 </div>
                 
-                <div><img src={story2} alt="picture" className={classes.scriptImg} /></div>
+                <div><img src={story2} alt = {"scenario2"} className={classes.scriptImg} /></div>
             </Slider>
         </>
     );
