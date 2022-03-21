@@ -1,5 +1,7 @@
-import classes from './scss/ScriptMain.module.scss'
-import { HomeLogo } from '../Common/HomeLogo'
+import classes from './scss/ScriptMain.module.scss';
+
+import { HomeLogo } from '../Common/HomeLogo';
+import { ScriptList } from './ScriptList';
 
 export const ScriptMain = () => {
 
@@ -12,7 +14,9 @@ export const ScriptMain = () => {
     return (
         <>
             <main className={classes.mainClass}>
-                <div className='listScripts'>AAAA</div>
+                <div className='listScripts'>
+                    <ScriptList></ScriptList>
+                </div>
                 <label>脚本作品集</label>
             </main>
 

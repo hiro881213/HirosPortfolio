@@ -1,6 +1,9 @@
 import { GraphicItem } from './GraphicItem';
 import { HomeLogo } from '../Common/HomeLogo';
 
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
 import classes from './scss/GraphicMain.module.scss';
 
 export const GraphicMain = () => {
@@ -32,7 +35,7 @@ export const GraphicMain = () => {
 
                             // ファイル一覧リストに各画像をセットする
                             images.forEach( (image:any) => {
-                                items.push(<GraphicItem pictUrl = {image}></GraphicItem>)
+                                items.push(<GraphicItem pictUrl = {image} key = {image}></GraphicItem>)
                             });
 
                             return items;
