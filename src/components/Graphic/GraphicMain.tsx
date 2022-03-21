@@ -1,5 +1,5 @@
 import { GraphicItem } from './GraphicItem';
-import { HomeLogo } from './HomeLogo';
+import { HomeLogo } from '../Common/HomeLogo';
 
 import classes from './scss/GraphicMain.module.scss';
 

@@ -4,22 +4,49 @@
     display: grid;
     place-items: center;
     z-index: 0;
-    height: 100%;
-
-    // .worksArea {
-    //     background-color: #f1ffef;
-    //     width: 80%;
-    // }
+    height: 100vh;
 
     LABEL {
+        position: fixed;
+        top: 120px;
+        right: 40px;
+        height: 550px;
+        font-size: 100px;
         -ms-writing-mode: tb-rl;
 	    writing-mode: vertical-rl;
+        letter-spacing: .1em;
         text-orientation: sideways;
-        font-size: 100px;
-        font-family: 'Tsukushi B Round Gothic'; font-weight: normal;
-//        font-family: 'YuMincho +36p Kana';
         color: #313131;
+        font-family: 'Tsukushi B Round Gothic'; font-weight: normal;
         font-weight: 100;
-    }
+        white-space: nowrap;
+        overflow: hidden;
+        border-bottom: 1px solid rgba(#F2F2F2, .5);
+        animation: typing 1.5s steps(10),
+          blink .5s steps(1) infinite alternate;
+      }
+      
+      @keyframes typing{
+        0% {height: 0;}
+      }
+      @keyframes blink{
+        50% {border-bottom-color: #242424;}
+      }
+      
+      @keyframes blink{
+        100% {border-bottom: none;}
+      }
+}
 
+.homeLogoArea {
+    text-decoration: none;
+    background-color: #ffffd6;
+    bottom : 30px;
+    right: 20px;
+    position:fixed;
+    width : 210px;
+    height: 80px;
+    border-radius: 80px;
+    border: 1px solid #242424;
+    opacity: 0.8;
 }
