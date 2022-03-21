@@ -1,8 +1,7 @@
 import Slider from "react-slick";
 import classes from "./scss/ScriptList.module.scss"
 
-import IMG1 from '../../assets/img/GraphicImage.jpg';
-import IMG2 from '../../assets/img/ProgramImage.jpg';
+import story1 from '../../assets/scenario/story1/page1.jpg';
 
 export const ScriptList = () => {
 
@@ -14,15 +13,13 @@ export const ScriptList = () => {
         centerMode: false,
     };
 
-    const images = [IMG1, IMG2, IMG2, IMG2, IMG2, IMG2, IMG2, IMG2, IMG2]
-
     return (
         <>
             <Slider {...settings}>
-            <div><img src={IMG1} alt="pictuer" className={classes.imgSize} /></div>
-            <div><img src={IMG1} alt="pictuer" className={classes.imgSize} /></div>
-            <div><img src={IMG1} alt="pictuer" className={classes.imgSize} /></div>
-            <div><img src={IMG1} alt="pictuer" className={classes.imgSize} /></div>
+            <div><img src={story1} alt="pictuer" className={classes.scriptImg} /></div>
+            {/* <div><img src={IMG1} alt="pictuer" className={classes.scriptImg} /></div>
+            <div><img src={IMG1} alt="pictuer" className={classes.scriptImg} /></div>
+            <div><img src={IMG1} alt="pictuer" className={classes.scriptImg} /></div> */}
             
             {/*
                 images.map((image) => {
