@@ -6,6 +6,13 @@ import PAGE2 from '../../assets/scenario/story1/page2.jpg';
 import PAGE3 from '../../assets/scenario/story1/page3.jpg';
 import PAGE4 from '../../assets/scenario/story1/page4.jpg';
 import PAGE5 from '../../assets/scenario/story1/page5.jpg';
+import PAGE6 from '../../assets/scenario/story1/page6.jpg';
+import PAGE7 from '../../assets/scenario/story1/page7.jpg';
+import PAGE8 from '../../assets/scenario/story1/page8.jpg';
+import PAGE9 from '../../assets/scenario/story1/page9.jpg';
+import PAGE10 from '../../assets/scenario/story1/page10.jpg';
+import PAGE11 from '../../assets/scenario/story1/page11.jpg';
+import PAGE12 from '../../assets/scenario/story1/page12.jpg';
 
 import classes from './scss/ReadScenarioMain.module.scss'
 
@@ -34,18 +41,32 @@ export const ReadScenarioMain = (props) => {
         );
     });
 
+    const pages = [
+        PAGE1, PAGE2, PAGE3, PAGE4, PAGE5, PAGE6, PAGE7, PAGE8, PAGE9, PAGE10, PAGE11, PAGE12
+    ];
+
     return (
         <>
             <main className={classes.readScinario}>
                 <div>
                     <HTMLFlipBook width={800} height={500} drawShadow = {true}>
-                        <Page page = {PAGE1}></Page>
-                        <Page page = {PAGE2}></Page>
-                        <Page page = {PAGE3}></Page>
-                        <Page page = {PAGE4}></Page>
-                        <Page page = {PAGE5}></Page>
+                    {
+                        (() => {
+
+                            const pagesElements = [];
+
+                            pages.forEach((page) => {
+
+                                pagesElements.push(<Page page = {page}></Page>);
+
+                            });
+
+                            return pagesElements;
+
+                        })()
+                    }
                     </HTMLFlipBook>
-                </div>          
+                </div>
             </main>
         </>
     );
