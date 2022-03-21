@@ -4,11 +4,16 @@ import { HomeLogo } from '../Common/HomeLogo'
 export const ScriptMain = () => {
 
     let title = '脚本作品集';
+    
+    //DOM取得
+    const text = document.querySelector('.text');
+
 
     return (
         <>
             <main className={classes.mainClass}>
-                <label id = 'scriptTitle'>脚本作品集</label>
+                <div className='listScripts'>AAAA</div>
+                <label>脚本作品集</label>
             </main>
 
             <div className = {classes.homeLogoArea}>

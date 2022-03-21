@@ -23,19 +23,29 @@
         overflow: hidden;
         border-bottom: 1px solid rgba(#F2F2F2, .5);
         animation: typing 1.5s steps(10),
-          blink .5s steps(1) infinite alternate;
-      }
-      
-      @keyframes typing{
+        blink .5s steps(1) infinite alternate;
+    }
+
+    @keyframes typing{
         0% {height: 0;}
-      }
-      @keyframes blink{
+    }
+    @keyframes blink{
         50% {border-bottom-color: #242424;}
-      }
-      
-      @keyframes blink{
+    }
+
+    @keyframes blink{
         100% {border-bottom: none;}
-      }
+    }
+
+    DIV {
+        opacity: 0;
+        animation: fade .5s ease-in-out 1.0s 1 normal forwards;
+    }
+    
+    @keyframes fade {
+        0% { opacity: 0; }
+        100% { opacity: 1; }
+    }
 }
 
 .homeLogoArea {
@@ -50,3 +60,4 @@
     border: 1px solid #242424;
     opacity: 0.8;
 }
+
