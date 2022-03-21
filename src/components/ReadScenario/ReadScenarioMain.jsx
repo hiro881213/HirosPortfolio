@@ -12,10 +12,12 @@ export const ReadScenarioMain = (props) => {
     const params = new URLSearchParams(useLocation().search);
     const target = params.get('story')
 
+    // フォルダ内ファイル取得処理
     const importAll = (r)  => {
         return r.keys().map(r);
     };
     
+    // フォルダ内ファイルインポート処理
     function componentWillMount() {
 
         let lstImages = [];
@@ -45,7 +47,6 @@ export const ReadScenarioMain = (props) => {
         );
     });
 
-    
     return (
         <>
             <main className={classes.readScinario}>
@@ -56,10 +57,9 @@ export const ReadScenarioMain = (props) => {
 
                             const pagesElements = [];
 
+                            // 対象ファイルを表示する
                             listOfImages.forEach((page) => {
-
                                 pagesElements.push(<Page page = {page}></Page>);
-
                             });
 
                             return pagesElements;
