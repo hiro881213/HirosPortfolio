@@ -2,8 +2,11 @@
 
 .contents {
     display: flex;
-    min-width: 1250px;
-    width: 70vw;
+    // min-width: 1250px;
+    // width: 70vw;
+    width : 980px;
+    max-width: 980px;
+    min-width: 980px;
     height: 65vh;
     justify-content: space-between;
     align-items: center;

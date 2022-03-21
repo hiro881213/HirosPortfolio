@@ -25,23 +25,35 @@ export const Menu: VFC = () => {
                     message = {labelMessage.ScriptMessage} 
                     read = {labelMessage.ScriptRead}>Scenario</MenuItem>
 
+
                 <MenuItem 
+                    image = {graphicImageUrl} 
+                    marginContents = "0px"
+                    mode = 'down'
+                    marginTop = "-100px"
+                    src = {`${baseURL}graphic`}
+                    message = {labelMessage.GraphicMessage} 
+                    read = {labelMessage.GraphicRead}>Graphic</MenuItem>
+
+
+
+                {/* <MenuItem 
                     image = {graphicImageUrl} 
                     marginContents = "0px"
                     mode = 'down'
                     marginTop = "20px"
                     src = {`${baseURL}graphic`}
                     message = {labelMessage.GraphicMessage} 
-                    read = {labelMessage.GraphicRead}>Graphic</MenuItem>
+                    read = {labelMessage.GraphicRead}>Graphic</MenuItem> */}
 
-                <MenuItem 
+                {/* <MenuItem 
                     image = {programImageUrl} 
                     marginContents = "0px"
                     mode = 'up'
                     marginTop = "-100px"
                     src = {baseURL}
                     message = {labelMessage.programMessage} 
-                    read = {labelMessage.programRead}>Programming</MenuItem>
+                    read = {labelMessage.programRead}>Programming</MenuItem> */}
             </div>
         </>
     )
