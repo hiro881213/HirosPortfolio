@@ -68,7 +68,12 @@ export const ReadScenarioMain = (props) => {
                         })()
                     }
                     </HTMLFlipBook>
-                    <Link to = '../script'>戻る</Link>
+
+                    <div className={classes.button}>
+                        <Link to = '../script'>
+                            <button>Go Back</button>
+                        </Link>
+                    </div>
                 </div>
             </main>
         </>
