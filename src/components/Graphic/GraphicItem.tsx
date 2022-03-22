@@ -1,4 +1,5 @@
 import classes from './scss/GraphicItem.module.scss'
+import graphicData from '../../assets/textLabels/textlabelMenu.json'
 
 // グラフィック項目コンポーネント
 export const GraphicItem = (props: any) => {
@@ -7,42 +8,41 @@ export const GraphicItem = (props: any) => {
     let title = '';
     let message = '';
 
-
     if (target === 1) {
-        title = 'Illusion In The Forest';
-        message = `彩度を上げ、残像を加えることで神秘感を表現`
+        title = graphicData.graphicTitle01;
+        message = graphicData.graphicMessage01;
 
     } else if (target === 2) {
-        title = 'Castle In the Painting';
-        message = `城の画像に対してテクスチャを入れることで質感のある表現を作成`
+        title = graphicData.graphicTitle02;
+        message = graphicData.graphicMessage02;
 
     } else if (target === 3) {
-        title = 'Dots Imaging';
-        message = `ドット調にすることでカッコよさを引き立てた表現`
+        title = graphicData.graphicTitle03;
+        message = graphicData.graphicMessage03;
 
     } else if (target === 4) {
-        title = 'Dimensional Distortion';
-        message = `一部画像を引き延ばすことでテクノロジー感を表現`
+        title = graphicData.graphicTitle04;
+        message = graphicData.graphicMessage04;
 
     } else if (target === 5) {
-        title = 'ミニチュア世界';
-        message = `彩度を極端に増加させることでミニチュア感を表現`
+        title = graphicData.graphicTitle05;
+        message = graphicData.graphicMessage05;
 
     } else if (target === 6) {
-        title = 'Illusion Of The Heart';
-        message = 'サイケディックな背景色に変え、被写体の周辺を歪ませることで幻想を表現'
+        title = graphicData.graphicTitle06;
+        message = graphicData.graphicMessage06;
 
     } else if (target === 7) {
-        title = 'Power Of Wave';
-        message = 'ボクサーに対して、波動を加えることで、威力感を表現'
+        title = graphicData.graphicTitle07;
+        message = graphicData.graphicMessage07;
 
     } else if (target === 8) {
-        title = 'Smoking Hades';
-        message = 'サイケディックな背景色に変え、被写体の周辺を歪ませることで幻想を表現'
+        title = graphicData.graphicTitle08;
+        message = graphicData.graphicMessage08;
 
     } else if (target === 9) {
-        title = 'Red Of Core';
-        message = 'お花畑を回転させることで、球体のコアのような表現を実現'
+        title = graphicData.graphicTitle09;
+        message = graphicData.graphicMessage09;
 
     }
 
