@@ -34,8 +34,8 @@ export const GraphicMain = () => {
                             const items: any[] = [];
 
                             // ファイル一覧リストに各画像をセットする
-                            images.forEach( (image:any) => {
-                                items.push(<GraphicItem pictUrl = {image} key = {image}></GraphicItem>)
+                            images.forEach( (image:any, index: number) => {
+                                items.push(<GraphicItem pictUrl = {image} target = {index + 1} key = {image}></GraphicItem>)
                             });
 
                             return items;
