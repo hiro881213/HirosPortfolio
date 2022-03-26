@@ -151,7 +151,7 @@ export const ReadScenarioMain = () => {
     });
 
     pages = dataPage.sort((a, b) =>{ 
-        return  b.split('.')[0].replace('/static/media/page', '') - a.split('.')[0].replace('/static/media/page', '');
+        return  b.split('.')[0].replace(/[^0-9]/g, '') - a.split('.')[0].replace(/[^0-9]/g, '');
     });
 
     // TURNJSオプション
