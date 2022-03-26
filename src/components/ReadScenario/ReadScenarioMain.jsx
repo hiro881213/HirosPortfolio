@@ -1,5 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import { useLocation } from 'react-router-dom';
 import $ from "jquery";
 import "turn.js";
 
@@ -12,6 +13,10 @@ class Turn extends React.Component {
         className: "",
         options: {}
     };
+
+    // -----------------------------------------
+    // イベントマウント処理
+    // -----------------------------------------
 
     componentDidMount = () => {
         
@@ -33,6 +38,10 @@ class Turn extends React.Component {
 
 
     }
+
+    // -----------------------------------------
+    // イベントアンマウント処理
+    // -----------------------------------------
 
     componentWillUnmount = () => {
 
@@ -104,31 +113,9 @@ class Turn extends React.Component {
 
 }
 
-const options = {
-    width: 800,
-    height: 600,
-    autoCenter: true,
-    display: "double",
-    acceleration: true,
-    elevation: 50,
-    gradients: !$.isTouch,
-    when: {
-        turned: function(e, page) {
-        console.log("Current view: ", $(this).turn("view"));
-        }
-    },
-    // direction: 'ltr'
-    direction: "rtl"
-};
 
-const pages = [
-    "https://raw.github.com/blasten/turn.js/master/demos/magazine/pages/01.jpg",
-    "https://raw.github.com/blasten/turn.js/master/demos/magazine/pages/02.jpg",
-    "https://raw.github.com/blasten/turn.js/master/demos/magazine/pages/03.jpg",
-    "https://raw.github.com/blasten/turn.js/master/demos/magazine/pages/04.jpg",
-    "https://raw.github.com/blasten/turn.js/master/demos/magazine/pages/05.jpg",
-    "https://raw.github.com/blasten/turn.js/master/demos/magazine/pages/06.jpg"
-];
+
+let pages = [];
 
 // ------------------------------------------------
 // ページ読み込み処理
@@ -136,18 +123,71 @@ const pages = [
 
 export const ReadScenarioMain = () => {
 
+    // GETパラメータを取得する
+    const params = new URLSearchParams(useLocation().search);
+    const target = params.get('story')
+    
+    // -----------------------------------------------
+    // フォルダ内ファイル取得処理
+    // -----------------------------------------------
+
+    const importAll = (r)  => {
+        return r.keys().map(r);
+    };
+    
+    // -----------------------------------------------
+    // フォルダ内ファイルインポート処理
+    // -----------------------------------------------
+
+    function componentWillMount() {
+
+        let lstImages = [];
+
+        if (target === '1') {
+            lstImages = importAll(require.context('../../assets/scenario/scenario1/', true, /\.(jpg)$/));
+
+        } else if (target === '2') {
+            lstImages = importAll(require.context('../../assets/scenario/scenario2/', true, /\.(jpg)$/));
+        }
+
+        return lstImages;
+    
+    }
+    // -----------------------------------------------
+
+    // 脚本データを取得する
+    const listOfImages = componentWillMount();
+    const dataPage = [];
+
+    // 対象ファイルを表示する
+    listOfImages.forEach((page) => {
+        dataPage.push(page);
+    });
+
+    pages = dataPage.sort((a, b) => a - b);
+    
+    console.log(pages);
+    
+    // TURNJSオプション
+    const options = {
+        width: 1200,
+        height: 800,
+        autoCenter: true,
+        display: "double",
+        acceleration: true,
+        elevation: 50,
+        gradients: !$.isTouch,
+        when: {
+            turned: function(e, page) {
+            }
+        },
+        // direction: 'ltr'
+        direction: "rtl",
+        // page: pages.length
+    };
+
     return (
         <>
-            {
-                // オンロード関数
-                window.onload = function() {
-
-                    // ページを先頭に移動
-                    document.getElementById('first').click();
-
-                }
-
-            }
 
             <Turn  options={options} className="magazine">
                 {pages.map((page, index) => (
@@ -159,9 +199,7 @@ export const ReadScenarioMain = () => {
 
             <button id = 'next'>⇦⇦Next</button>
             <button id = 'prev'>Prev⇨⇨</button>
-            <button id = 'first'>先頭</button>
-            
-            
+            <button id = 'first' style = {{display: 'none'}}>先頭</button>
         </>
     );
 };
