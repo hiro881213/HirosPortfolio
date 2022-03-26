@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { useLocation } from 'react-router-dom';
+import { useLocation, Link } from 'react-router-dom';
 import $ from "jquery";
 import "turn.js";
 
@@ -33,10 +33,6 @@ class Turn extends React.Component {
         // Prevボタンクリックイベントを追加
         document.getElementById('prev').addEventListener("click", this.handleprevButton, false);
 
-        // 先頭ボタンクリックイベントを追加
-        document.getElementById('first').addEventListener("click", this.handleFirstButton, false);
-
-
     }
 
     // -----------------------------------------
@@ -45,9 +41,9 @@ class Turn extends React.Component {
 
     componentWillUnmount = () => {
 
-        if (this.el) {
-            $(this.el).turn("destroy").remove();
-        }
+        // if (this.el) {
+        //     $(this.el).turn("destroy").remove();
+        // }
 
         // キーダウンイベントをアンマウント
         document.removeEventListener("keydown", this.handleKeyDown, false);
@@ -90,14 +86,6 @@ class Turn extends React.Component {
         $(this.el).turn("next");
     }
 
-    // ----------------------------------------
-    // 先頭ボタン押下処理
-    // ----------------------------------------
-
-    handleFirstButton = () => {
-        $(this.el).turn('page',6);
-    }
-
     render() {
         return (
         <>
@@ -112,8 +100,6 @@ class Turn extends React.Component {
     }
 
 }
-
-
 
 let pages = [];
 
@@ -164,14 +150,14 @@ export const ReadScenarioMain = () => {
         dataPage.push(page);
     });
 
-    pages = dataPage.sort((a, b) => a - b);
-    
-    console.log(pages);
-    
+    pages = dataPage.sort((a, b) =>{ 
+        return  b.split('.')[0].replace('/static/media/page', '') - a.split('.')[0].replace('/static/media/page', '');
+    });
+
     // TURNJSオプション
     const options = {
         width: 1200,
-        height: 800,
+        height: 700,
         autoCenter: true,
         display: "double",
         acceleration: true,
@@ -183,7 +169,7 @@ export const ReadScenarioMain = () => {
         },
         // direction: 'ltr'
         direction: "rtl",
-        // page: pages.length
+        page: pages.length
     };
 
     return (
@@ -196,10 +182,16 @@ export const ReadScenarioMain = () => {
                     </div>
                 ))}
             </Turn>
+            <div style = {{textAlign: 'center'}}>
+                <button id = 'next'>⇦⇦Next</button>
+                <button id = 'prev'>Prev⇨⇨</button>
+            </div>
+            <div className="button">
+                <Link to = '../script'>
+                    <button>Go Back</button>
+                </Link>
+            </div>
 
-            <button id = 'next'>⇦⇦Next</button>
-            <button id = 'prev'>Prev⇨⇨</button>
-            <button id = 'first' style = {{display: 'none'}}>先頭</button>
         </>
     );
 };
