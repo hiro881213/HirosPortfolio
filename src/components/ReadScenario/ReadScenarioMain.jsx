@@ -101,6 +101,31 @@ class Turn extends React.Component {
 
 }
 
+// ------------------------------------------------
+// ファイル名切り出し処理
+// ------------------------------------------------
+
+const filterData = (str, target) => {
+
+    const arr = str.split('.')
+
+    let count = 0;
+    let x = -1;
+
+    arr.forEach((val) => {
+
+        if (val.indexOf(target) > -1 && x === -1) {
+            x = count;
+        } else {
+            count++;
+        }
+
+    });
+
+    return arr[x];
+
+}
+
 let pages = [];
 
 // ------------------------------------------------
@@ -151,7 +176,7 @@ export const ReadScenarioMain = () => {
     });
 
     pages = dataPage.sort((a, b) =>{ 
-        return  b.split('.')[0].replace(/[^0-9]/g, '') - a.split('.')[0].replace(/[^0-9]/g, '');
+        return  filterData(b, "page").replace(/[^0-9]/g, '') - filterData(a, "page").replace(/[^0-9]/g, '');
     });
 
     // TURNJSオプション
