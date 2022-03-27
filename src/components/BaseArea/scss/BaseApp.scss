@@ -1,10 +1,14 @@
+HEADER {
+    height: clamp(80px, 9vw, 122px);
+    background-color: aqua;
+    margin:0;
+}
+
 .w-container {
     width: unquote('min(92%, 1166px)');
     margin: auto;
 }
 
-HEADER {
-    height: 112px;
-    background-color: aqua;
-    margin:0;
+H1 {
+    margin: 0;
 }

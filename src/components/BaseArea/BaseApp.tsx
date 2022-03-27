@@ -5,7 +5,7 @@ export const BaseApp = () => {
 
     return (
         <>
-            <header className = 'w-container'>
+            <header>
                 <HeaderData></HeaderData>
             </header>
             {/* <section></section>
