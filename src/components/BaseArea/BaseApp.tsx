@@ -1,4 +1,5 @@
 import { HeaderData } from '../HeaderArea/HeaderData';
+import { MenuList   } from '../Menu/MenuList';
 import './scss/BaseApp.scss';
 
 export const BaseApp = () => {
@@ -8,8 +9,12 @@ export const BaseApp = () => {
             <header>
                 <HeaderData></HeaderData>
             </header>
-            {/* <section></section>
-            <footer></footer> */}
+
+            <section className = 'menuList'>
+                <MenuList></MenuList>
+            </section>
+
+            {/* <footer></footer> */}
         </>
     );
 
