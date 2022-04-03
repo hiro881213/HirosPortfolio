@@ -17,5 +17,5 @@ H1 {
 .menuList {
     background-color: bisque;
     height: clamp(735px,82vh, 1200px);
-    padding: clamp(90px, 9vw, 120px);
+    padding: clamp(90px, 9vw, 120px) 0;
 }
