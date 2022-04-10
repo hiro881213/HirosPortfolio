@@ -15,7 +15,7 @@ export const MenuItem = (props: any) => {
         <Link to = {props.src}>
             <div className={`${classes.item} ${fade}`} style ={style}>
                 <span className = {classes.title}>{props.children}</span>
-                
+
                 <figure>
                     <img src={props.image} alt= {"menuImage"} />
 

@@ -11,7 +11,9 @@ export const BaseApp = () => {
             </header>
 
             <section className = 'menuList'>
-                <MenuList></MenuList>
+                <div className = 'w-container' style = {{height: '100%'}}>
+                    <MenuList></MenuList>
+                </div>
             </section>
 
             {/* <footer></footer> */}
