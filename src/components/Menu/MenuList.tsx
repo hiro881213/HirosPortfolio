@@ -13,8 +13,8 @@ export const MenuList = () => {
     return (
         <>
             <div className = 'posts-container'>
-                <MenuItem src = {graphic} url = {`${baseURL}graphic`}></MenuItem>
-                <MenuItem src = {script}  url = {`${baseURL}script`}></MenuItem>
+                <MenuItem src = {graphic} url = {`${baseURL}graphic`}>graphic</MenuItem>
+                <MenuItem src = {script}  url = {`${baseURL}script`}>Script</MenuItem>
                 <MenuItem src = {program}></MenuItem>
             </div>
         </>

@@ -9,7 +9,7 @@ $--v-space: clamp(45px, 9vw, 60px);
     gap: 32px 100px;
     .post {
         padding: $--v-space 0;
-        background-color: #F3F1ED;
+        background-color: transparent;
     }
 }
 
@@ -25,6 +25,18 @@ $--v-space: clamp(45px, 9vw, 60px);
             width: 450px;
             height: 400px;
         }
+        SPAN {
+            position: sticky;
+            top: 230px;
+        }
+        LABEL {
+            color: #FFF;
+            font-weight: bold;
+            font-size: 45px;
+        }
+        A {
+            text-decoration: none;
+        }
     }
 }
 
@@ -35,6 +47,14 @@ $--v-space: clamp(45px, 9vw, 60px);
         IMG {
             width: 215px;
             height: 180px;
+        }
+        LABEL {
+            color: #FFF;
+            font-weight: bold;
+            font-size: 45px;
+        }
+        A {
+            text-decoration: none;
         }
     }
 }
