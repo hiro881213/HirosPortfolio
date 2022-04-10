@@ -5,6 +5,7 @@ HEADER {
     z-index: 0;
     position: relative;
     color: #EEE;
+    z-index: 1;
 }
 
 .w-container {
@@ -23,4 +24,5 @@ H1 {
     background-color: transparent;
     height: clamp(735px, 82vh, 1200px);
     position: relative;
+    z-index: 1;
 }
