@@ -1,7 +1,10 @@
 HEADER {
     height: clamp(80px, 9vw, 122px);
-    background-color: aqua;
+    background-color: transparent;
     margin: 0;
+    z-index: 0;
+    position: relative;
+    color: #EEE;
 }
 
 .w-container {
@@ -17,6 +20,7 @@ H1 {
 /** オプションリスト */
 
 .menuList {
-    background-color: bisque;
+    background-color: transparent;
     height: clamp(735px, 82vh, 1200px);
+    position: relative;
 }
