@@ -1,36 +1,21 @@
 import './scss/MenuList.scss';
 
-import grachic from '../../assets/img/ProgramImage.jpg';
+import { MenuItem } from './MenuItem';
+
+import program from '../../assets/img/ProgramImage.jpg';
 import script  from '../../assets/img/ScriptImage.jpg';
 import graphic from '../../assets/img/GraphicImage.jpg'
 
 export const MenuList = () => {
+
+    let baseURL = "./";
+
     return (
         <>
             <div className = 'posts-container'>
-                <article className = 'post'>
-                    <a href = '#'>
-                        <figure>
-                            <img src = {grachic} alt = 'image' />
-                        </figure>
-                    </a>
-                </article>
-
-                <article className = 'post'>
-                    <a href = '#'>
-                        <figure>
-                            <img src = {script} />
-                        </figure>
-                    </a>
-                </article>
-
-                <article className = 'post'>
-                    <a href = '#'>
-                        <figure>
-                            <img src = {graphic} />
-                        </figure>
-                    </a>
-                </article>
+                <MenuItem src = {graphic} url = {`${baseURL}graphic`}></MenuItem>
+                <MenuItem src = {script}  url = {`${baseURL}script`}></MenuItem>
+                <MenuItem src = {program}></MenuItem>
             </div>
         </>
     );

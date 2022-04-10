@@ -38,18 +38,3 @@ $--v-space: clamp(45px, 9vw, 60px);
         }
     }
 }
-
-
-/** メニューの並び */
-
-.menuLi {
-    list-style-type: none;
-    display: flex;
-    padding: 0;
-    width: 100vw;
-}
-
-.menuLi LI {
-    display: inline;
-    margin-left: 50px;
-}
