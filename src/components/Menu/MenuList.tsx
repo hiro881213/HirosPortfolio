@@ -1,3 +1,4 @@
+import MediaQuery from "react-responsive";
 import './scss/MenuList.scss';
 
 import { MenuItem } from './MenuItem';
@@ -13,9 +14,31 @@ export const MenuList = () => {
     return (
         <>
             <div className = 'posts-container'>
-                <MenuItem src = {graphic} url = {`${baseURL}graphic`}>graphic</MenuItem>
-                <MenuItem src = {script}  url = {`${baseURL}script`}>Scenalio</MenuItem>
-                <MenuItem src = {program}>Programming</MenuItem>
+                    <article className = 'post'>
+                        <h2>Load Of Contents Creator</h2>
+                        <MediaQuery query = '(max-width: 767px)'>
+                            <h3>Name:</h3>
+                            <h3 style = {{paddingLeft: '20px'}}>F.T.Hiro</h3>
+
+                            <h3>Degree:</h3>
+                            <h3 style = {{paddingLeft: '20px'}}>Master of Engineering</h3>
+
+                            <h3>Career:</h3>
+                            <h3 style = {{paddingLeft: '20px'}}>System Engineer In SIer Company</h3>
+
+                            <h3>Position:</h3>
+                            <h3 style = {{paddingLeft: '20px'}}>Full Stack</h3>
+
+                            <h3>Other Skill:</h3>
+                            <h3 style = {{paddingLeft: '20px'}}>Scenario writing</h3>
+                            <h3 style = {{paddingLeft: '20px'}}>Video Production</h3>
+                            <h3 style = {{paddingLeft: '20px'}}>Video Editing</h3>
+                        </MediaQuery>
+                    </article>
+
+                    <MenuItem src = {graphic} url = {`${baseURL}graphic`}>graphic</MenuItem>
+                    <MenuItem src = {script}  url = {`${baseURL}script`}>Scenalio</MenuItem>
+                    <MenuItem src = {program}>Programming</MenuItem>
             </div>
         </>
     );

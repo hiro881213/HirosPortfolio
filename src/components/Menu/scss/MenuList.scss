@@ -15,7 +15,7 @@ $--v-space: clamp(35px, 8vw, 50px);
 
 @media (min-width: 768px) {
     .posts-container {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: 800px repeat(5, 1fr);
         height: 100%;
         align-items: center;
         overflow: scroll hidden;
@@ -33,6 +33,11 @@ $--v-space: clamp(35px, 8vw, 50px);
             color: #FFF;
             font-weight: bold;
             font-size: 50px;
+        }
+        H3 {
+            color: #FFF;
+            font-weight: bold;
+            font-size: 25px;
         }
         A {
             text-decoration: none;
@@ -53,6 +58,11 @@ $--v-space: clamp(35px, 8vw, 50px);
             color: #FFF;
             font-weight: bold;
             font-size: 30px;
+        }
+        H3 {
+            color: #FFF;
+            font-weight: bold;
+            font-size: 15px;
         }
         A {
             text-decoration: none;
