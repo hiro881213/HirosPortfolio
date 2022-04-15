@@ -12,17 +12,19 @@ export const BaseApp = () => {
         <>
 
             <HomeOpen />
-            
+
             {/* <!-- スマートフォン向け画面レイアウト --> */}
             <MediaQuery query = '(max-width: 767px)'>
-                <header>
-                    <HeaderData></HeaderData>
-                </header>
-                <section className = 'menuList'>
-                    <div className = 'w-container' style = {{height: '100%'}}>
-                        <MenuList></MenuList>
-                    </div>
-                </section>
+                <div className = 'all'>
+                    <header>
+                        <HeaderData></HeaderData>
+                    </header>
+                    <section className = 'menuList'>
+                        <div className = 'w-container' style = {{height: '100%'}}>
+                            <MenuList></MenuList>
+                        </div>
+                    </section>
+                </div>
             </MediaQuery>
 
             {/* <!-- PC向け画面レイアウト --> */}

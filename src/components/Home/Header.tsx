@@ -8,7 +8,7 @@ export const HeaderArea: VFC = () => {
     const baseURL = "./"
 
     return(
-        <>  
+        <>
             <Link to = {baseURL}>
                 <span className={classes.fontRound} >HIRO'S PORTFOLIO</span>
             </Link>

@@ -1,3 +1,9 @@
+.all {
+    background: rgb(8, 4, 4);
+    background: linear-gradient(180deg, rgba(8, 4, 4, 1) 0%, rgba(32, 25, 44, 0.4864146342130602) 8%, rgba(0, 0, 0, 1) 92%);
+    height: 100%;
+}
+
 HEADER {
     height: clamp(80px, 9vw, 122px);
     background-color: transparent;
@@ -22,7 +28,15 @@ H1 {
 
 .menuList {
     background-color: transparent;
-    height: clamp(735px, 82vh, 1200px);
     position: relative;
     z-index: 1;
+}
+
+@media (min-width: 768px) {
+    .menuList {
+        background-color: transparent;
+        height: clamp(735px, 82vh, 1200px);
+        position: relative;
+        z-index: 1;
+    }
 }
