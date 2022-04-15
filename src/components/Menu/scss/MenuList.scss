@@ -29,6 +29,11 @@ $--v-space: clamp(35px, 8vw, 50px);
             position: sticky;
             top: 230px;
         }
+        H1 {
+            color: #FFF;
+            font-weight: bold;
+            font-size: 70px;
+        }
         H2 {
             color: #FFF;
             font-weight: bold;
@@ -47,12 +52,12 @@ $--v-space: clamp(35px, 8vw, 50px);
 
 @media (max-width: 767px) {
     .post {
+        overflow-x: hidden;
         IMG {
-            margin-top: -15px;
             aspect-ratio: 3 / 2;
-            object-fit: cover;
-            width: 215px;
-            height: 180px;
+            margin-left: 5%;
+            width: 95vw;
+            position: relative;
         }
         H2 {
             color: #FFF;

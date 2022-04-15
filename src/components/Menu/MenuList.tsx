@@ -15,7 +15,7 @@ export const MenuList = () => {
         <>
             <div className = 'posts-container'>
                     <article className = 'post'>
-                        <h2>Load Of Contents Creator</h2>
+                        <h2>Road Of Contents Creator</h2>
                         <MediaQuery query = '(max-width: 767px)'>
                             <h3>Name:</h3>
                             <h3 style = {{paddingLeft: '20px'}}>F.T.Hiro</h3>
@@ -51,6 +51,13 @@ export const MenuList = () => {
 
                         </MediaQuery>
                     </article>
+
+                    <MediaQuery query = '(min-width: 768px)'>
+                        <article>
+                            <h1>HIRO'S<br/>PORTFOLIO</h1>
+                        </article>
+                    </MediaQuery>
+
 
                     <MenuItem src = {graphic} url = {`${baseURL}graphic`}>graphic</MenuItem>
                     <MenuItem src = {script}  url = {`${baseURL}script`}>Scenalio</MenuItem>
