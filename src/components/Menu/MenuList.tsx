@@ -14,8 +14,8 @@ export const MenuList = () => {
         <>
             <div className = 'posts-container'>
                 <MenuItem src = {graphic} url = {`${baseURL}graphic`}>graphic</MenuItem>
-                <MenuItem src = {script}  url = {`${baseURL}script`}>Script</MenuItem>
-                <MenuItem src = {program}></MenuItem>
+                <MenuItem src = {script}  url = {`${baseURL}script`}>Scenalio</MenuItem>
+                <MenuItem src = {program}>Programming</MenuItem>
             </div>
         </>
     );

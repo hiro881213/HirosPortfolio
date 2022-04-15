@@ -6,7 +6,7 @@ export const MenuItem = (prop: any) => {
             <article className = 'post'>
                 <a href = {prop.url}>
 
-                    <span><label>{prop.children}</label></span>
+                    <span><h2>{prop.children}</h2></span>
 
                     <figure>
                         <img src = {prop.src} alt = 'image' />

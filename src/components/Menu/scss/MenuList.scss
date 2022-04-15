@@ -1,5 +1,5 @@
 @charset "UTF-8";
-$--v-space: clamp(45px, 9vw, 60px);
+$--v-space: clamp(35px, 8vw, 50px);
 
 /** メニュー全体 */
 
@@ -29,10 +29,10 @@ $--v-space: clamp(45px, 9vw, 60px);
             position: sticky;
             top: 230px;
         }
-        LABEL {
+        H2 {
             color: #FFF;
             font-weight: bold;
-            font-size: 45px;
+            font-size: 50px;
         }
         A {
             text-decoration: none;
@@ -42,16 +42,17 @@ $--v-space: clamp(45px, 9vw, 60px);
 
 @media (max-width: 767px) {
     .post {
-        padding: $--v-space 0;
-        background-color: #F3F1ED;
         IMG {
+            margin-top: -15px;
+            aspect-ratio: 3 / 2;
+            object-fit: cover;
             width: 215px;
             height: 180px;
         }
-        LABEL {
+        H2 {
             color: #FFF;
             font-weight: bold;
-            font-size: 45px;
+            font-size: 30px;
         }
         A {
             text-decoration: none;
