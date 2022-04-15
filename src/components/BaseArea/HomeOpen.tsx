@@ -1,3 +1,4 @@
+import MediaQuery from "react-responsive";
 import styled, { keyframes } from 'styled-components';
 import classes from './scss/HomeOpen.module.scss'
 
@@ -9,7 +10,7 @@ export const HomeOpen = () => {
     50% {transform: scale(1);}
     90% {top: 0;transform: scale(1.2,0.8);}
   `;
-  
+
   const Container = styled.div`
     position: relative;
     width: 100%;
@@ -23,7 +24,7 @@ export const HomeOpen = () => {
     height: 150px;
     margin-left: -80px;
   `;
-  
+
   const Bound = styled.p`
     span {
       font-family: "M PLUS Rounded 1c", sans-serif;

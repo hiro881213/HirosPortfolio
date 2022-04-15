@@ -10,9 +10,6 @@ export const BaseApp = () => {
 
     return (
         <>
-
-            <HomeOpen />
-
             {/* <!-- スマートフォン向け画面レイアウト --> */}
             <MediaQuery query = '(max-width: 767px)'>
                 <div className = 'all'>
@@ -29,6 +26,7 @@ export const BaseApp = () => {
 
             {/* <!-- PC向け画面レイアウト --> */}
             <MediaQuery query = '(min-width: 768px)'>
+                <HomeOpen />
                 <HomeParticles />
                 <header>
                     <HeaderData></HeaderData>
