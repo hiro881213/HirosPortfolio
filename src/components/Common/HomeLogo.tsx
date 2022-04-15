@@ -12,7 +12,7 @@ export const HomeLogo = () => {
             <Link to = {baseURL}>
                 <span className={classes.fontRound} >HIRO'S</span>
                 <br />
-                <span className={classes.fontRound} >PORTFOLIO</span>                
+                <span className={classes.fontRound} >PORTFOLIO</span>
             </Link>
         </>
     );

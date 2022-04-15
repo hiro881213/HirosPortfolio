@@ -26,7 +26,7 @@ export const BaseApp = () => {
 
             {/* <!-- PC向け画面レイアウト --> */}
             <MediaQuery query = '(min-width: 768px)'>
-                <HomeOpen />
+            <HomeOpen />
                 <HomeParticles />
                 <header>
                     <HeaderData></HeaderData>

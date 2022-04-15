@@ -14,7 +14,7 @@ export const App : VFC = () => {
   return (
     <>
       <Routes>
-        <Route path='/' element={<BaseApp />} ></Route>
+        <Route path='/' element={<BaseApp />}></Route>
         <Route path='script' element={<ScriptMain />} ></Route>
         <Route path='graphic' element={<GraphicMain />} ></Route>
         <Route path='detailScenario' element={<ReadScenarioMain />} ></Route>
