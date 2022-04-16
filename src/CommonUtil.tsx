@@ -4,7 +4,7 @@ export const getUrl = () => {
 
     if (uri.hostname.indexOf("localhost") > -1) {
 
-        return '';
+        return '/';
 
     } else {
         return "/portfolio";
