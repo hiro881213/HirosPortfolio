@@ -15,7 +15,7 @@ $--v-space: clamp(35px, 8vw, 50px);
 
 @media (min-width: 768px) {
     .posts-container {
-        grid-template-columns: 500px repeat(5, 1fr);
+        grid-template-columns: 580px repeat(5, 1fr);
         height: 100%;
         align-items: center;
         overflow: scroll hidden;

@@ -3,12 +3,16 @@
     justify-content: space-between;
     align-items: center;
     height: 100%;
-
+    A {
+        text-decoration: none;
+    }
     H1 {
         font-size: clamp(30px, 4vw, 50px);
         min-height: 0vw;
-        font-weight: 400;
-        line-height: 1.2em
+        font-weight: bold;
+        line-height: 1.2em;
+        margin-top: -87px;
+        position: sticky;
+        color: #FFF;
     }
-
 }

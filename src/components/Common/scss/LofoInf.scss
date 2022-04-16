@@ -1,12 +1,14 @@
-$value: 120px;
-$borderVal: 35px;
+$value: 60px;
+$borderVal: 17.5px;
+$value2: 120px;
+$borderVal2: 35px;
 .container {
     display: flex;
     flex-wrap: wrap;
     gap: 10px 20px;
 }
 
-.infinity::before {
+.infinity1::before {
     content: "";
     width: $value;
     height: $value;
@@ -17,13 +19,35 @@ $borderVal: 35px;
     list-style: none;
 }
 
-.infinity::after {
+.infinity1::after {
     content: "";
     width: $value;
     height: $value;
     display: inline flow-root list-item;
-    border: $borderVal solid #7FCCE3;
+    border: $borderVal solid #0066FF;
     border-radius: $value $value $value 0;
+    transform: rotate(45deg);
+    list-style: none;
+}
+
+.infinity2::before {
+    content: "";
+    width: $value2;
+    height: $value2;
+    display: inline flow-root list-item;
+    border: $borderVal2 solid #ff1493;
+    border-radius: $value2 $value2 0 $value2;
+    transform: rotate(-45deg);
+    list-style: none;
+}
+
+.infinity2::after {
+    content: "";
+    width: $value2;
+    height: $value2;
+    display: inline flow-root list-item;
+    border: $borderVal2 solid #0066FF;
+    border-radius: $value2 $value2 $value2 0;
     transform: rotate(45deg);
     list-style: none;
 }

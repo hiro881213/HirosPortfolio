@@ -1,11 +1,11 @@
 import './scss/LofoInf.scss'
 
-export const LogoInf = () => {
+export const LogoInf = (prop: any) => {
 
     return (
         <>
             <div className='container'>
-                <div className="infinity"></div>
+                <div className={`infinity${prop.type}`}></div>
             </div>
         </>
     )
