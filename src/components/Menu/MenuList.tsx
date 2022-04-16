@@ -4,6 +4,7 @@ import './scss/MenuList.scss';
 import { MenuItem } from './MenuItem';
 import { SmartProfile } from "./SmartProfile";
 import { PcProfile } from "./PcProfile";
+import { TitleItem } from "./TitleItem";
 
 import program from '../../assets/img/ProgramImage.jpg';
 import script  from '../../assets/img/ScriptImage.jpg';
@@ -29,7 +30,7 @@ export const MenuList = () => {
 
                 <MediaQuery query = '(min-width: 768px)'>
                     <article>
-                        <h1>HIRO'S<br/>PORTFOLIO</h1>
+                        <TitleItem></TitleItem>
                     </article>
                 </MediaQuery>
 

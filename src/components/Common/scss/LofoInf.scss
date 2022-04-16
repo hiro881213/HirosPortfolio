@@ -1,0 +1,29 @@
+$value: 120px;
+$borderVal: 35px;
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 20px;
+}
+
+.infinity::before {
+    content: "";
+    width: $value;
+    height: $value;
+    display: inline flow-root list-item;
+    border: $borderVal solid #ff1493;
+    border-radius: $value $value 0 $value;
+    transform: rotate(-45deg);
+    list-style: none;
+}
+
+.infinity::after {
+    content: "";
+    width: $value;
+    height: $value;
+    display: inline flow-root list-item;
+    border: $borderVal solid #7FCCE3;
+    border-radius: $value $value $value 0;
+    transform: rotate(45deg);
+    list-style: none;
+}
