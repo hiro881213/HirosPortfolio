@@ -1,3 +1,4 @@
+$space: clamp(90px, 9vw, 120px);
 .workContainer {
     display: flex;
     justify-content: space-between;
@@ -17,10 +18,18 @@
     }
 }
 
-.workTitle {
-    text-align: center;
-    H1 {
-        font-weight: bold;
-        font-size: 70px;
+.graphics {
+    padding: $space 0;
+    background-color: #f3f1ed;
+    .workTitle {
+        text-align: center;
+        H1 {
+            font-weight: bold;
+            font-size: 70px;
+        }
+    }
+    IMG {
+        width: 1000px;
+        height: 750px;
     }
 }
