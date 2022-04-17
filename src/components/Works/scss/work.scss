@@ -1,8 +1,5 @@
 $space: clamp(90px, 9vw, 120px);
 .workContainer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     margin-top: 20px;
     A {
         text-decoration: none;
@@ -18,18 +15,54 @@ $space: clamp(90px, 9vw, 120px);
     }
 }
 
+.workTitle {
+    text-align: center;
+    H1 {
+        font-weight: bold;
+        font-size: clamp(40px, 5.2vw, 70px);
+        min-height: 0;
+    }
+}
+
 .graphics {
     padding: $space 0;
     background-color: #f3f1ed;
-    .workTitle {
-        text-align: center;
-        H1 {
-            font-weight: bold;
-            font-size: 70px;
+    .graphicsContainer {
+        display: grid;
+        gap: 32px 20px;
+        FIGURE {
+            margin: 0;
+            padding: 0;
+            IMG {
+                max-width: 100%;
+                height: auto;
+                padding: $space 0;
+                aspect-ratio: 3 / 2;
+                object-fit: cover;
+            }
         }
     }
-    IMG {
-        width: 1000px;
-        height: 750px;
+}
+
+@supports not (aspect-ratio: 3 / 2) {
+    .graphicsContainer {
+        IMG {
+            height: 180px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .workTitle {
+        margin-top: 40px;
+    }
+    .graphicsContainer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 768px) {
+    .graphicsContainer {
+        grid-template-columns: repeat(3, 1fr);
     }
 }

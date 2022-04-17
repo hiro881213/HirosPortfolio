@@ -1,13 +1,18 @@
-import { Link } from 'react-router-dom';
-
 import { getUrl } from '../../CommonUtil'
 import { LogoInf } from '../Common/LogoInf'
-import  IMG01 from "../../assets/graphics/IMG01.jpg"
-
+import { WorkItems } from './WorkItems';
 
 import './scss/work.scss';
 
 export const WorkMain = () => {
+
+    // ファイル読み込み処理
+    const importAll = (r: __WebpackModuleApi.RequireContext) => {
+        return r.keys().map(v => r(v) as string);
+    }
+
+    // Graphicsディレクトリの内部を全て取り出す
+    const images = importAll(require.context('../../assets/graphics', true, /\.(jpg)$/));
 
     return (
         <>
@@ -16,19 +21,29 @@ export const WorkMain = () => {
                     <LogoInf type = {1}></LogoInf>
                 </a>
             </header>
-            <section className = 'graphics w-container'>
-                <div className = 'workTitle'>
-                    <h1>Works</h1>
-                </div>
 
-                <div className = 'graphicsContainer'>
-                    <article className = 'graphic'>
-                        <Link to = '#'>
-                            <figure>
-                                <img src = {IMG01} alt = 'image'></img>
-                            </figure>
-                        </Link>
-                    </article>
+            <div className = 'workTitle'>
+                <h1>Works</h1>
+            </div>
+
+            <section className = 'graphics'>
+
+                <div className = 'graphicsContainer w-container'>
+                {
+                    (() => {
+
+                        // ファイル一覧リストを生成する
+                        const items: any[] = [];
+
+                        // ファイル一覧リストに各画像をセットする
+                        images.forEach( (image:any, index: number) => {
+                            items.push(<WorkItems pictUrl = {image} target = {index + 1} key = {image}></WorkItems>)
+                        });
+
+                        return items;
+
+                    })()
+                }
                 </div>
 
             </section>
