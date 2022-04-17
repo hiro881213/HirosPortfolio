@@ -12,7 +12,7 @@ export const GraphicMain = () => {
     const importAll = (r: __WebpackModuleApi.RequireContext) => {
         return r.keys().map(v => r(v) as string);
     }
-    
+
     // Graphicsディレクトリの内部を全て取り出す
     const images = importAll(require.context('../../assets/graphics', true, /\.(jpg)$/));
 
@@ -39,12 +39,12 @@ export const GraphicMain = () => {
                             });
 
                             return items;
-                        
+
                         })()
                     }
                 </div>
             </main>
-            
+
             <div className = {classes.homeLogoArea}>
                 <HomeLogo />
             </div>

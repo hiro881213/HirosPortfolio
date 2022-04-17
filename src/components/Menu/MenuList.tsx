@@ -35,9 +35,9 @@ export const MenuList = () => {
                 </MediaQuery>
 
 
-                <MenuItem src = {graphic} url = {`${baseURL}graphic`}>graphic</MenuItem>
+                <MenuItem src = {graphic} url = {`${baseURL}work`}>graphic</MenuItem>
                 <MenuItem src = {script}  url = {`${baseURL}script`}>Scenalio</MenuItem>
-                <MenuItem src = {program}>Programming</MenuItem>
+                <MenuItem src = {program} url = {`${baseURL}graphic`}>Programming</MenuItem>
             </div>
         </>
     );

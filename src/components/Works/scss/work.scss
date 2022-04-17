@@ -1,8 +1,8 @@
-.container {
+.workContainer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 100%;
+    margin-top: 20px;
     A {
         text-decoration: none;
     }
@@ -17,8 +17,6 @@
     }
 }
 
-@media (max-width: 767px) {
-    .container {
-        padding-top: 16px;
-    }
+.workTitle {
+    text-align: center;
 }

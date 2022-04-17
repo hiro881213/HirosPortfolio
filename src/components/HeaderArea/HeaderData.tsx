@@ -22,8 +22,6 @@ export const HeaderData = () => {
                         <LogoInf type = {1}></LogoInf>
                     </a>
                 </MediaQuery>
-
-
             </div>
         </>
     );
