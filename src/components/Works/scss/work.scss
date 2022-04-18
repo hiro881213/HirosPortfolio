@@ -18,9 +18,10 @@ $space: clamp(90px, 9vw, 120px);
 .workTitle {
     text-align: center;
     H1 {
-        font-weight: bold;
+        font-weight: 700;
         font-size: clamp(40px, 5.2vw, 70px);
         min-height: 0;
+        color: #4b4b4b
     }
 }
 
