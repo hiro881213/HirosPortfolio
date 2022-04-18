@@ -26,19 +26,30 @@ $space: clamp(90px, 9vw, 120px);
 
 .graphics {
     padding: $space 0;
-    background-color: #f3f1ed;
+    background-color: #fffff9;
     .graphicsContainer {
         display: grid;
-        gap: 32px 20px;
+        gap: 32px 50px;
+        A {
+            text-decoration: none;
+        }
         FIGURE {
             margin: 0;
             padding: 0;
+            padding: $space 0;
             IMG {
                 max-width: 100%;
                 height: auto;
-                padding: $space 0;
                 aspect-ratio: 3 / 2;
                 object-fit: cover;
+            }
+            SPAN {
+                text-align: center;
+                H2 {
+                    color: #808080;
+                    font-weight: normal;
+                    font-size: 0.9vw;
+                }
             }
         }
     }

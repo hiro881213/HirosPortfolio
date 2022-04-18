@@ -7,6 +7,7 @@ export const WorkItems = (props: any) => {
             <Link to = '#'>
                 <figure>
                     <img src= {props.pictUrl} alt = 'image'></img>
+                    <span><h2>Title</h2></span>
                 </figure>
             </Link>
         </article>
