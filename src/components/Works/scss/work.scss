@@ -5,23 +5,21 @@ $space: clamp(90px, 9vw, 120px);
         text-decoration: none;
     }
     H1 {
-        font-size: clamp(30px, 4vw, 50px);
         min-height: 0vw;
-        font-weight: bold;
         line-height: 1.2em;
         margin-top: -87px;
         position: sticky;
-        color: #FFF;
     }
 }
 
 .workTitle {
     text-align: center;
     H1 {
-        font-weight: 700;
+        font-weight: 200;
         font-size: clamp(40px, 5.2vw, 70px);
+        font-family: 'Monoton', cursive;
         min-height: 0;
-        color: #4b4b4b
+        color: #4b4b4b;
     }
 }
 
