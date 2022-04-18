@@ -49,7 +49,7 @@ $space: clamp(90px, 9vw, 120px);
                 H2 {
                     color: #808080;
                     font-weight: normal;
-                    font-size: 0.9vw;
+                    font-size: clamp(12px, 0.9vw, 20px);
                 }
             }
         }
