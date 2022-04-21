@@ -79,28 +79,34 @@ $space: clamp(90px, 9vw, 120px);
 
 .workDetail {
     padding: $space 0;
-    background-color: #9fffff;
-    DIV {
-        text-align: center;
-        padding-bottom: 45px;
-        SPAN {
-            border-bottom: solid 3px #696969;
-            padding-bottom: 15px;
-        }
-        H2 {
-            color: #4b4b4b;
-            font-weight: normal;
-            font-size: clamp(18px, 1vw, 26px);
-        }
+    background-color: #fff9fc;
+    .titleSpace {
+        padding: $space 0;
     }
-    FIGURE {
-        text-align: center;
-        IMG {
-            max-width: 650px;
-            width: 100%;
-            height: auto;
-            aspect-ratio: 3 / 2;
-            object-fit: cover;
+    ARTICLE {
+        padding: $space 0;
+        DIV {
+            text-align: center;
+            padding-bottom: 45px;
+            SPAN {
+                border-bottom: solid 2px #696969;
+                padding-bottom: 15px;
+            }
+            H2 {
+                color: #4b4b4b;
+                font-weight: normal;
+                font-size: clamp(18px, 1vw, 26px);
+            }
+        }
+        FIGURE {
+            text-align: center;
+            IMG {
+                max-width: 650px;
+                width: 100%;
+                height: auto;
+                aspect-ratio: 3 / 2;
+                object-fit: cover;
+            }
         }
     }
 }

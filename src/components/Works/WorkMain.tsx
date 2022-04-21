@@ -46,6 +46,11 @@ export const WorkMain = () => {
                     })()
                 }
                 </div>
+            </section>
+            <section className = 'workDetail'>
+                <div className = 'workTitle titleSpace'>
+                    <h1>Detail Works</h1>
+                </div>
                 <div>
                 {
                     (() => {

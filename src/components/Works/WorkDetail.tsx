@@ -1,7 +1,7 @@
 import graphicData from '../../assets/textLabels/textlabelMenu.json'
 
 export const WorkDetail = (props: any) => {
-    
+
     let target = props.children;
     let title = '';
 
@@ -17,10 +17,10 @@ export const WorkDetail = (props: any) => {
         }
 
     }
-    
+
     return (
         <>
-            <article className = 'w-container workDetail'>
+            <article>
                 <div><span>{title}</span></div>
                 <figure>
                     <img src= {props.pictUrl} alt = 'image'></img>
