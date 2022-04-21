@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 import graphicData from '../../assets/textLabels/textlabelMenu.json'
 
 export const WorkItems = (props: any) => {
@@ -22,12 +22,12 @@ export const WorkItems = (props: any) => {
     return (
         <>
             <article className = 'graphic'>
-                <Link to = '#'>
+                <AnchorLink href={`#work${target}`}>
                     <figure>
                         <img src= {props.pictUrl} alt = 'image'></img>
                         <span><h2>{title}</h2></span>
                     </figure>
-                </Link>
+                </AnchorLink>
             </article>
         </>
     );

@@ -20,7 +20,7 @@ export const WorkDetail = (props: any) => {
 
     return (
         <>
-            <article>
+            <article id = {`work${target}`}>
                 <div><span>{title}</span></div>
                 <figure>
                     <img src= {props.pictUrl} alt = 'image'></img>
