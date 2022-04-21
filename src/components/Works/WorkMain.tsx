@@ -45,7 +45,21 @@ export const WorkMain = () => {
                     })()
                 }
                 </div>
+                {/* <div>
+                {
+                    (() => {
 
+                        const detailItems: any[] = [];
+
+                        images.forEach( (image:any, index: number) => {
+                            detailItems.push(<h2>AAAA</h2>)
+                        });
+
+                        return detailItems;
+
+                    })()
+                }
+                </div> */}
             </section>
         </>
     );

@@ -8,43 +8,43 @@ export const GraphicItem = (props: any) => {
     let title = '';
     let message = '';
 
-    if (target === 1) {
-        title = graphicData.graphicTitle01;
-        message = graphicData.graphicMessage01;
+    // if (target === 1) {
+    //     title = graphicData.graphicTitle01;
+    //     message = graphicData.graphicMessage01;
 
-    } else if (target === 2) {
-        title = graphicData.graphicTitle02;
-        message = graphicData.graphicMessage02;
+    // } else if (target === 2) {
+    //     title = graphicData.graphicTitle02;
+    //     message = graphicData.graphicMessage02;
 
-    } else if (target === 3) {
-        title = graphicData.graphicTitle03;
-        message = graphicData.graphicMessage03;
+    // } else if (target === 3) {
+    //     title = graphicData.graphicTitle03;
+    //     message = graphicData.graphicMessage03;
 
-    } else if (target === 4) {
-        title = graphicData.graphicTitle04;
-        message = graphicData.graphicMessage04;
+    // } else if (target === 4) {
+    //     title = graphicData.graphicTitle04;
+    //     message = graphicData.graphicMessage04;
 
-    } else if (target === 5) {
-        title = graphicData.graphicTitle05;
-        message = graphicData.graphicMessage05;
+    // } else if (target === 5) {
+    //     title = graphicData.graphicTitle05;
+    //     message = graphicData.graphicMessage05;
 
-    } else if (target === 6) {
-        title = graphicData.graphicTitle06;
-        message = graphicData.graphicMessage06;
+    // } else if (target === 6) {
+    //     title = graphicData.graphicTitle06;
+    //     message = graphicData.graphicMessage06;
 
-    } else if (target === 7) {
-        title = graphicData.graphicTitle07;
-        message = graphicData.graphicMessage07;
+    // } else if (target === 7) {
+    //     title = graphicData.graphicTitle07;
+    //     message = graphicData.graphicMessage07;
 
-    } else if (target === 8) {
-        title = graphicData.graphicTitle08;
-        message = graphicData.graphicMessage08;
+    // } else if (target === 8) {
+    //     title = graphicData.graphicTitle08;
+    //     message = graphicData.graphicMessage08;
 
-    } else if (target === 9) {
-        title = graphicData.graphicTitle09;
-        message = graphicData.graphicMessage09;
+    // } else if (target === 9) {
+    //     title = graphicData.graphicTitle09;
+    //     message = graphicData.graphicMessage09;
 
-    }
+    // }
 
     return (
         <>

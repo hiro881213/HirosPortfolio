@@ -6,37 +6,30 @@ export const WorkItems = (props: any) => {
     let target = props.target;
     let title = '';
 
-    if (target === 1) {
-        title = graphicData.graphicTitle01;
-    } else if (target === 2) {
-        title = graphicData.graphicTitle02;
-    } else if (target === 3) {
-        title = graphicData.graphicTitle03;
-    } else if (target === 4) {
-        title = graphicData.graphicTitle04;
-    } else if (target === 5) {
-        title = graphicData.graphicTitle05;
-    } else if (target === 6) {
-        title = graphicData.graphicTitle06;
-    } else if (target === 7) {
-        title = graphicData.graphicTitle07;
-    } else if (target === 8) {
-        title = graphicData.graphicTitle08;
-    } else if (target === 9) {
-        title = graphicData.graphicTitle09;
+    const targetTitleKey = `graphicTitle${target}`;
+
+    for (const v in graphicData) {
+
+        const key = v as keyof typeof graphicData
+
+        if (String(key) === targetTitleKey ) {
+            title = graphicData[key];
+            console.log(graphicData[key]);
+            break;
+        }
 
     }
 
     return (
         <>
-        <article className = 'graphic'>
-            <Link to = '#'>
-                <figure>
-                    <img src= {props.pictUrl} alt = 'image'></img>
-                    <span><h2>{title}</h2></span>
-                </figure>
-            </Link>
-        </article>
+            <article className = 'graphic'>
+                <Link to = '#'>
+                    <figure>
+                        <img src= {props.pictUrl} alt = 'image'></img>
+                        <span><h2>{title}</h2></span>
+                    </figure>
+                </Link>
+            </article>
         </>
     );
 }
