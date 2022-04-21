@@ -1,9 +1,8 @@
-import { Link } from 'react-router-dom';
 import graphicData from '../../assets/textLabels/textlabelMenu.json'
 
-export const WorkItems = (props: any) => {
-
-    let target = props.target;
+export const WorkDetail = (props: any) => {
+    
+    let target = props.children;
     let title = '';
 
     const targetTitleKey = `graphicTitle${target}`;
@@ -18,17 +17,16 @@ export const WorkItems = (props: any) => {
         }
 
     }
-
+    
     return (
         <>
-            <article className = 'graphic'>
-                <Link to = '#'>
-                    <figure>
-                        <img src= {props.pictUrl} alt = 'image'></img>
-                        <span><h2>{title}</h2></span>
-                    </figure>
-                </Link>
+            <article className = 'w-container workDetail'>
+                <div><span>{title}</span></div>
+                <figure>
+                    <img src= {props.pictUrl} alt = 'image'></img>
+                </figure>
             </article>
+
         </>
     );
 }

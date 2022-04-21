@@ -1,6 +1,7 @@
 import { getUrl } from '../../CommonUtil'
 import { LogoInf } from '../Common/LogoInf'
-import { WorkItems } from './WorkItems';
+import { WorkItems } from './WorkItems'
+import { WorkDetail } from './WorkDetail'
 
 import './scss/work.scss';
 
@@ -45,21 +46,21 @@ export const WorkMain = () => {
                     })()
                 }
                 </div>
-                {/* <div>
+                <div>
                 {
                     (() => {
 
                         const detailItems: any[] = [];
 
                         images.forEach( (image:any, index: number) => {
-                            detailItems.push(<h2>AAAA</h2>)
+                            detailItems.push(<WorkDetail pictUrl = {image}>{index + 1}</WorkDetail>)
                         });
 
                         return detailItems;
 
                     })()
                 }
-                </div> */}
+                </div>
             </section>
         </>
     );
