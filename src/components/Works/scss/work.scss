@@ -85,7 +85,7 @@ $space: clamp(90px, 9vw, 120px);
     }
     ARTICLE {
         padding: $space 0;
-        DIV {
+        .titleDiv {
             text-align: center;
             padding-bottom: 45px;
             SPAN {
@@ -100,6 +100,7 @@ $space: clamp(90px, 9vw, 120px);
         }
         FIGURE {
             text-align: center;
+            padding-bottom: 45px;
             IMG {
                 max-width: 650px;
                 width: 100%;
@@ -107,6 +108,12 @@ $space: clamp(90px, 9vw, 120px);
                 aspect-ratio: 3 / 2;
                 object-fit: cover;
             }
+        }
+        .memoDiv {
+            color: #4b4b4b;
+            font-weight: normal;
+            font-size: clamp(15px, 1vw, 20px);
+            text-align: center;
         }
     }
 }
