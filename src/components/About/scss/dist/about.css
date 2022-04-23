@@ -1,9 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Monoton&display=swap");
 .allAbout {
-  width: 100vw;
-  text-align: center;
-  overflow: hidden;
-  margin: auto;
+  height: 85vh;
 }
 .allAbout .bgImg {
   background-size: 95vw;
