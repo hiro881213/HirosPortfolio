@@ -1,6 +1,6 @@
 .allAbout {
-  position: relative;
   width: 100vw;
+  text-align: center;
   overflow: hidden;
   margin: auto;
 }
@@ -15,7 +15,17 @@
   bottom: 0;
   right: 0;
   background-repeat: no-repeat;
+  -webkit-background-clip: text;
+  color: transparent;
   animation: bgAnime 12s infinite;
+}
+.allAbout .bgImg h1 {
+  font-size: 17vw;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 0.8em;
+  letter-spacing: 0.1em;
 }
 
 @keyframes bgAnime {

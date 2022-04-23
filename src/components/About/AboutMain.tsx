@@ -37,10 +37,18 @@ export const AboutMain = () => {
             </header>
 
             <section className='allAbout'>
-                <div style = {src1} className='bgImg'></div>
-                <div style = {src2} className='bgImg'></div>
-                <div style = {src3} className='bgImg'></div>
-                <div style = {src4} className='bgImg'></div>
+                <div style = {src1} className='bgImg'>
+                    <h1>HIRO'S<br/>VISION<br/>SKILLS</h1>
+                </div>
+                <div style = {src2} className='bgImg'>
+                    <h1>HIRO'S<br/>VISION<br/>SKILLS</h1>
+                </div>
+                <div style = {src3} className='bgImg'>
+                    <h1>HIRO'S<br/>VISION<br/>SKILLS</h1>
+                </div>
+                <div style = {src4} className='bgImg'>
+                    <h1>HIRO'S<br/>VISION<br/>SKILLS</h1>
+                </div>
             </section>
 
             {/* <img src = {image}></img> */}
