@@ -4,10 +4,10 @@ import { Routes, Route } from 'react-router-dom';
 
 import './App.scss';
 
+import { AboutMain } from './components/About/AboutMain';
 import { BaseApp } from './components/BaseArea/BaseApp';
 import { WorkMain } from './components/Works/WorkMain';
 import { ScriptMain } from './components/Script/ScriptMain';
-import { GraphicMain } from './components/Graphic/GraphicMain';
 import { ReadScenarioMain } from './components/ReadScenario/ReadScenarioMain';
 
 export const App : VFC = () => {
@@ -16,9 +16,9 @@ export const App : VFC = () => {
     <>
       <Routes>
         <Route path='/' element={<BaseApp />}></Route>
+        <Route path='about' element={<AboutMain />} ></Route>
         <Route path='work' element={<WorkMain />} ></Route>
         <Route path='script' element={<ScriptMain />} ></Route>
-        <Route path='graphic' element={<GraphicMain />} ></Route>
         <Route path='detailScenario' element={<ReadScenarioMain />} ></Route>
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
