@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Monoton&display=swap");
 .allAbout {
   width: 100vw;
   text-align: center;
@@ -5,27 +6,26 @@
   margin: auto;
 }
 .allAbout .bgImg {
-  width: 100vw;
   background-size: 95vw;
-  height: 80vh;
   opacity: 0;
   position: absolute;
   top: 20vh;
   left: 0;
   bottom: 0;
   right: 0;
+  overflow: hidden;
   background-repeat: no-repeat;
   -webkit-background-clip: text;
   color: transparent;
-  animation: bgAnime 12s infinite;
+  animation: bgAnime 16s infinite;
 }
 .allAbout .bgImg h1 {
   font-size: 17vw;
   font-weight: bold;
   text-align: center;
-  vertical-align: middle;
-  line-height: 0.8em;
+  line-height: 0.9em;
   letter-spacing: 0.1em;
+  font-family: "Monoton";
 }
 
 @keyframes bgAnime {

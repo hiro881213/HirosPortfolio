@@ -14,15 +14,15 @@ exports.AboutMain = function () {
     };
     var src2 = {
         backgroundImage: "url(" + programming_jpg_1["default"] + ")",
-        animationDelay: '3s'
+        animationDelay: '4s'
     };
     var src3 = {
         backgroundImage: "url(" + recording_jpg_1["default"] + ")",
-        animationDelay: '6s'
+        animationDelay: '8s'
     };
     var src4 = {
         backgroundImage: "url(" + settingAudio_jpg_1["default"] + ")",
-        animationDelay: '9s'
+        animationDelay: '12s'
     };
     return (React.createElement(React.Fragment, null,
         React.createElement("header", { className: 'workContainer w-container' },

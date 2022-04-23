@@ -17,15 +17,15 @@ export const AboutMain = () => {
     };
     const src2  = {
         backgroundImage: `url(${program})`,
-        animationDelay: '3s',
+        animationDelay: '4s',
     };
     const src3  = {
         backgroundImage: `url(${record})`,
-        animationDelay: '6s',
+        animationDelay: '8s',
     };
     const src4  = {
         backgroundImage: `url(${settingAudio})`,
-        animationDelay: '9s',
+        animationDelay: '12s',
     };
 
     return (
