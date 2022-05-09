@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Monoton&display=swap");
 .allAbout {
   height: 85vh;
+  background-color: beige;
 }
 .allAbout .bgImg {
   background-size: 95vw;
@@ -41,4 +42,12 @@
   100% {
     opacity: 0;
   }
+}
+.skillArea {
+  height: 100vh;
+  padding: 20px 0px;
+}
+.skillArea H2 {
+  font-size: 50px;
+  color: #808080;
 }

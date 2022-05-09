@@ -19,7 +19,10 @@ export const AboutMain = () => {
             </section>
 
             <section className = 'w-container'>
-                AAAA
+                <div className='skillArea'>
+                    <h2>Programming Skills</h2>
+                    <h3>Front End</h3>
+                </div>
             </section>
         </>
     )

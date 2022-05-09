@@ -17,10 +17,11 @@ export const MenuList = () => {
         <>
             <MediaQuery query = '(max-width: 767px)'>
                 <div className = 'posts-container'>
-                    <h2>Road Of Contents Creator</h2>
                     <article className = 'post'>
+                        <h2>Road Of Contents Creator</h2>
                         <SmartProfile></SmartProfile>
                     </article>
+
                     <MenuItem src = {program} url = {`${baseURL}about`}>About</MenuItem>
                     <MenuItem src = {graphic} url = {`${baseURL}work`}>graphic</MenuItem>
                     <MenuItem src = {script}  url = {`${baseURL}script`}>Scenalio</MenuItem>
