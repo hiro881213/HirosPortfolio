@@ -8,6 +8,15 @@ import jQueryLogo from '../../assets/about/jQueryLogo.jpg'
 import sassLogo from '../../assets/about/sassLogo.jpg'
 import angularLogo from '../../assets/about/angularLogo.jpg'
 import reactLogo from '../../assets/about/reactLogo.jpg'
+import javaLogo from '../../assets/about/javaLogo.jpg'
+import springLogo from '../../assets/about/springLogo.jpg'
+import phpLogo from '../../assets/about/phpLogo.jpg'
+import javaEELogo from '../../assets/about/javaEELogo.jpg'
+import oracleLogo from '../../assets/about/oracleLogo.png'
+import mySQLLogo from '../../assets/about/mysqlLogo.jpg'
+import redhatLogo from '../../assets/about/redhatLogo.jpg'
+import vmwareLogo from '../../assets/about/vmwareLogo.jpg'
+import linuxLogo from '../../assets/about/linuxLogo.jpg'
 
 import './scss/About.scss';
 
@@ -73,6 +82,61 @@ export const AboutMain = () => {
                         </article>
                     </div>
                     <h3>Backend</h3>
+                    <div className='skill-container'>
+                        <article className = 'skillPost'>
+                            <figure>
+                                <img src = {javaLogo} />
+                            </figure>
+                        </article>
+                        <article className = 'skillPost'>
+                            <figure>
+                                <img src = {springLogo} />
+                            </figure>
+                        </article>
+                        <article className = 'skillPost'>
+                            <figure>
+                                <img src = {javaEELogo} />
+                            </figure>
+                        </article>
+                        <article className = 'skillPost'>
+                            <figure>
+                                <img src = {phpLogo} />
+                            </figure>
+                        </article>
+                    </div>
+                    <h3>Database</h3>
+                    <div className='skill-container'>
+                        <article className = 'skillPost'>
+                            <figure>
+                                <img src = {oracleLogo} />
+                            </figure>
+                        </article>
+                        <article className = 'skillPost'>
+                            <figure>
+                                <img src = {mySQLLogo} />
+                            </figure>
+                        </article>
+                    </div>
+                    <h3>Infrastructure</h3>
+                    <div className='skill-container'>
+                        <article className = 'skillPost'>
+                            <figure>
+                                <img src = {redhatLogo} />
+                            </figure>
+                        </article>
+                        <article className = 'skillPost'>
+                            <figure>
+                                <img src = {vmwareLogo} />
+                            </figure>
+                        </article>
+
+                        <article className = 'skillPost'>
+                            <figure>
+                                <img src = {linuxLogo} />
+                            </figure>
+                        </article>
+
+                    </div>
                 </div>
             </section>
         </>

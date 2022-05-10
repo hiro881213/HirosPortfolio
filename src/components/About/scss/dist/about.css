@@ -51,6 +51,9 @@
   font-size: 50px;
   color: #808080;
 }
+.skillArea H3 {
+  padding: 15px 0;
+}
 .skillArea .skill-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
