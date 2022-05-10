@@ -17,6 +17,7 @@ import mySQLLogo from '../../assets/about/mysqlLogo.jpg'
 import redhatLogo from '../../assets/about/redhatLogo.jpg'
 import vmwareLogo from '../../assets/about/vmwareLogo.jpg'
 import linuxLogo from '../../assets/about/linuxLogo.jpg'
+import githubLogo from '../../assets/about/githubLogo.jpg'
 
 import './scss/About.scss';
 
@@ -135,7 +136,14 @@ export const AboutMain = () => {
                                 <img src = {linuxLogo} />
                             </figure>
                         </article>
-
+                    </div>
+                    <h3>Other</h3>
+                    <div className='skill-container'>
+                        <article className = 'skillPost'>
+                            <figure>
+                                <img src = {githubLogo} />
+                            </figure>
+                        </article>
                     </div>
                 </div>
             </section>

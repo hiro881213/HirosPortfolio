@@ -20,6 +20,7 @@ var mysqlLogo_jpg_1 = require("../../assets/about/mysqlLogo.jpg");
 var redhatLogo_jpg_1 = require("../../assets/about/redhatLogo.jpg");
 var vmwareLogo_jpg_1 = require("../../assets/about/vmwareLogo.jpg");
 var linuxLogo_jpg_1 = require("../../assets/about/linuxLogo.jpg");
+var githubLogo_jpg_1 = require("../../assets/about/githubLogo.jpg");
 require("./scss/About.scss");
 exports.AboutMain = function () {
     return (React.createElement(React.Fragment, null,
@@ -86,5 +87,10 @@ exports.AboutMain = function () {
                             React.createElement("img", { src: vmwareLogo_jpg_1["default"] }))),
                     React.createElement("article", { className: 'skillPost' },
                         React.createElement("figure", null,
-                            React.createElement("img", { src: linuxLogo_jpg_1["default"] }))))))));
+                            React.createElement("img", { src: linuxLogo_jpg_1["default"] })))),
+                React.createElement("h3", null, "Other"),
+                React.createElement("div", { className: 'skill-container' },
+                    React.createElement("article", { className: 'skillPost' },
+                        React.createElement("figure", null,
+                            React.createElement("img", { src: githubLogo_jpg_1["default"] }))))))));
 };
