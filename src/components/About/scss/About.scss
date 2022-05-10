@@ -51,4 +51,22 @@
         font-size: 50px;
         color: #808080;
     }
+    .skill-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 32px 25px;
+        overflow: hidden;
+        .skillPost {
+            IMG {
+                width: 200px;
+                height: 150px;
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .skill-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
