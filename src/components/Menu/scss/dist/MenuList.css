@@ -1,0 +1,72 @@
+@charset "UTF-8";
+/** メニュー全体 */
+.posts-container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 32px 100px;
+}
+.posts-container .post {
+  padding: clamp(35px, 8vw, 50px) 0;
+  background-color: transparent;
+}
+
+@media (min-width: 768px) {
+  .posts-container {
+    grid-template-columns: 580px repeat(5, 1fr);
+    height: 100%;
+    align-items: center;
+    overflow: scroll hidden;
+  }
+  .posts-container IMG {
+    aspect-ratio: 3/2;
+    object-fit: cover;
+    width: 450px;
+    height: 400px;
+  }
+  .posts-container SPAN {
+    position: sticky;
+    top: 230px;
+  }
+  .posts-container H1 {
+    color: #FFF;
+    font-weight: bold;
+    font-size: 70px;
+  }
+  .posts-container H2 {
+    color: #FFF;
+    font-weight: bold;
+    font-size: 50px;
+  }
+  .posts-container H3 {
+    color: #FFF;
+    font-weight: bold;
+    font-size: 25px;
+  }
+  .posts-container A {
+    text-decoration: none;
+  }
+}
+@media (max-width: 767px) {
+  .post {
+    overflow-x: hidden;
+  }
+  .post IMG {
+    aspect-ratio: 3/2;
+    margin-left: 5%;
+    width: 95vw;
+    position: relative;
+  }
+  .post H2 {
+    color: #FFF;
+    font-weight: bold;
+    font-size: 30px;
+  }
+  .post H3 {
+    color: #FFF;
+    font-weight: bold;
+    font-size: 15px;
+  }
+  .post A {
+    text-decoration: none;
+  }
+}

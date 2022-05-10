@@ -26,7 +26,7 @@ export const ScriptList = () => {
                         <img src={story1} alt = {"scenario1"} className={classes.scriptImg} />
                     </Link>
                 </div>
-                
+
                 <div>
                     <Link to = {`${baseURL}detailScenario?story=2`}>
                         <img src={story2} alt = {"scenario2"} className={classes.scriptImg} />

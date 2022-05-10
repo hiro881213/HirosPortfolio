@@ -14,7 +14,7 @@ export const PcMenu = () => {
     let baseURL = "./";
 
     const screenRef = useRef<HTMLDivElement>(null);
-    const winWidth = 30;
+    const winWidth = 570;
     useEffect(() => {
 
         screenRef.current!.onwheel = ev => {

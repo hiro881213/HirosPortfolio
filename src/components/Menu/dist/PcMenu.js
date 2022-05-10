@@ -11,7 +11,7 @@ var GraphicImage_jpg_1 = require("../../assets/img/GraphicImage.jpg");
 exports.PcMenu = function () {
     var baseURL = "./";
     var screenRef = react_1.useRef(null);
-    var winWidth = 30;
+    var winWidth = 570;
     react_1.useEffect(function () {
         screenRef.current.onwheel = function (ev) {
             ev.preventDefault();
