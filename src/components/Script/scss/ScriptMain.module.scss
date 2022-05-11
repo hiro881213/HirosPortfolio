@@ -1,70 +1,81 @@
 .mainClass {
-    background-color: #F2F2F2;
     text-align: center;
     place-items: center;
-    height: calc(100vh - 50px);
+    height: calc(100vh - 150px);
     overflow: hidden;
-
     LABEL {
         position: fixed;
-        top: 120px;
+        top: 150px;
         right: 40px;
         height: 550px;
         font-size: 100px;
         -ms-writing-mode: tb-rl;
-	    writing-mode: vertical-rl;
+        writing-mode: vertical-rl;
         letter-spacing: .1em;
         text-orientation: sideways;
         color: #313131;
-        font-family: 'Tsukushi B Round Gothic'; font-weight: normal;
+        font-family: 'Tsukushi B Round Gothic';
+        font-weight: normal;
         font-weight: 100;
         white-space: nowrap;
         overflow: hidden;
         border-bottom: 1px solid rgba(#F2F2F2, .5);
-        animation: typing 1.5s steps(10),
-        blink .5s steps(1) infinite alternate;
+        animation: typing 1.5s steps(10), blink .5s steps(1) infinite alternate;
     }
-
-    @keyframes typing{
-        0% {height: 0;}
+    @keyframes typing {
+        0% {
+            height: 0;
+        }
     }
-    @keyframes blink{
-        50% {border-bottom-color: #242424;}
+    @keyframes blink {
+        50% {
+            border-bottom-color: #242424;
+        }
     }
-
-    @keyframes blink{
-        100% {border-bottom: none;}
+    @keyframes blink {
+        100% {
+            border-bottom: none;
+        }
     }
-
     DIV {
         opacity: 0;
         animation: fade .5s ease-in-out 1.0s 1 normal forwards;
     }
-    
     @keyframes fade {
-        0% { opacity: 0; }
-        100% { opacity: 1; }
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
     }
+}
 
+.listScripts {
+    width: 1300px;
+    text-align: center;
+    margin-top: -50px;
+    IMG {
+        border: 1px solid #242424;
+    }
 }
 
 .homeLogoArea {
     text-decoration: none;
     background-color: #ffffd6;
-    bottom : 30px;
+    bottom: 30px;
     right: 20px;
-    position:fixed;
-    width : 210px;
+    position: fixed;
+    width: 210px;
     height: 80px;
     border-radius: 80px;
     border: 1px solid #242424;
     opacity: 0.8;
 }
 
-.fadeUp{
-    
-    animation-name:fadeUpAnime;
-    animation-duration:1s;
-    animation-fill-mode:forwards;
-    opacity:0;
+.fadeUp {
+    animation-name: fadeUpAnime;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    opacity: 0;
 }
