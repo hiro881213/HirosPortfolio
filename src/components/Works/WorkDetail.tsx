@@ -1,6 +1,14 @@
 import graphicData from '../../assets/textLabels/textlabelMenu.json'
+import { useInView } from 'react-intersection-observer';
+import 'animate.css';
 
 export const WorkDetail = (props: any) => {
+
+    const { ref, inView } = useInView({
+        // オプション
+        rootMargin: '-20px', // ref要素が現れてから50px過ぎたら
+        triggerOnce: true, // 最初の一度だけ実行
+    });
 
     let target = props.children;
     let title = '';
@@ -29,12 +37,17 @@ export const WorkDetail = (props: any) => {
 
     return (
         <>
-            <article id = {`work${target}`} className = 'w-container'>
-                <div className = 'titleDiv'><span>{title}</span></div>
-                <figure>
-                    <img src= {props.pictUrl} alt = 'image'></img>
-                </figure>
-                <div className='memoDiv'><span>{message}</span></div>
+            <article ref={ref} id = {`work${target}`} className = 'w-container'>
+                {
+                    inView && (
+                        <div className="animate__animated animate__zoomIn">
+                            <div className = 'titleDiv'><span>{title}</span></div>
+                            <figure>
+                                <img src= {props.pictUrl}></img>
+                            </figure>
+                            <div className='memoDiv'><span>{message}</span></div>
+                        </div>
+                )}
             </article>
 
         </>
