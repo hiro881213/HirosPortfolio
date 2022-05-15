@@ -2,7 +2,7 @@ import { getUrl } from '../../CommonUtil'
 import { LogoInf } from '../Common/LogoInf'
 import { AboutBackImage } from './AboutBackImage'
 import { AboutSkillArticle } from './AboutSkillArticle'
-
+import { AboutMyCareer } from './AboutMyCareer'
 import oracleLogo from '../../assets/about/oracleLogo.png'
 import mySQLLogo from '../../assets/about/mysqlLogo.jpg'
 import githubLogo from '../../assets/about/githubLogo.jpg'
@@ -44,19 +44,7 @@ export const AboutMain = () => {
                     <div className='careerArea'>
                         <h2>My Career</h2>
                         <ul>
-                            <li>
-                                <div className='wrap'>
-                                    <div className='title'><h3>輸出管理システム</h3></div>
-                                    <div>
-                                        <p>PHPからJava化</p>
-                                        <p>PHPで実装されたシステムをJavaに変更およびレイアウトや仕様を効率化する</p>
-                                        <p>要員：2人  工数：15人月</p>
-                                        <br></br>
-                                        <p>Linux/PHP/JavaScript/jQuety/Java8/JSP/MySQL/Tomcat/Struts2/VMWare</p>
-                                        <p>設計/Webデザイン/実装/試験</p>
-                                    </div>
-                                </div>
-                            </li>
+                            <li><AboutMyCareer></AboutMyCareer></li>
                             <li>サーバリプレイス業務</li>
                             <li>報告書郵送管理基幹システム</li>
                             <li>画像管理基幹システム</li>
