@@ -18,7 +18,7 @@ exports.WorkItems = function (props) {
     }
     var _a = react_intersection_observer_1.useInView({
         // オプション
-        rootMargin: '-50px',
+        rootMargin: '0px',
         triggerOnce: true
     }), ref = _a.ref, inView = _a.inView;
     return (React.createElement(React.Fragment, null,

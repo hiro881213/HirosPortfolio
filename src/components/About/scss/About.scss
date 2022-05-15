@@ -43,13 +43,35 @@
     }
 }
 
-.skillArea {
+H2 {
+    font-size: 50px;
+    color: #808080;
+}
+
+.careerArea {
     height: 100vh;
-    padding: 20px 0px;
-    H2 {
-        font-size: 50px;
-        color: #808080;
+    UL {
+        list-style: none;
+        LI {
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+            border-bottom: solid;
+            border-color: #FF0000;
+            border-width: 2px;
+            .wrap {
+                display: flex;
+                .title {
+                    display: flex;
+                    width: 50%;
+                }
+            }
+        }
     }
+}
+
+.skillArea {
+    height: 200vh;
+    padding: 20px 0px;
     H3 {
         padding: 18px 0;
     }

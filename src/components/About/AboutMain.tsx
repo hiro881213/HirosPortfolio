@@ -41,8 +41,29 @@ export const AboutMain = () => {
                 </section>
 
                 <section className = 'w-container'>
-                    <div className='skillArea'>
+                    <div className='careerArea'>
                         <h2>My Career</h2>
+                        <ul>
+                            <li>
+                                <div className='wrap'>
+                                    <div className='title'><h3>輸出管理システム</h3></div>
+                                    <div>
+                                        <p>PHPからJava化</p>
+                                        <p>PHPで実装されたシステムをJavaに変更およびレイアウトや仕様を効率化する</p>
+                                        <p>要員：2人  工数：15人月</p>
+                                        <br></br>
+                                        <p>Linux/PHP/JavaScript/jQuety/Java8/JSP/MySQL/Tomcat/Struts2/VMWare</p>
+                                        <p>設計/Webデザイン/実装/試験</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>サーバリプレイス業務</li>
+                            <li>報告書郵送管理基幹システム</li>
+                            <li>画像管理基幹システム</li>
+                            <li>資料登録閲覧システム</li>
+                            <li>研究開発経理システム</li>
+                            <li>製造部品管理基幹システム</li>
+                        </ul>
                     </div>
                 </section>
 
@@ -85,7 +106,14 @@ export const AboutMain = () => {
                         </div>
                     </div>
                 </section>
+                <section className = 'w-container'>
+                    <div className='skillArea'>
+                        <h2>Creative Skills</h2>
+                    </div>
+                </section>
             </main>
+
+
         </>
     )
 }

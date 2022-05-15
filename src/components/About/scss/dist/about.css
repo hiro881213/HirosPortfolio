@@ -42,13 +42,35 @@
     opacity: 0;
   }
 }
-.skillArea {
-  height: 100vh;
-  padding: 20px 0px;
-}
-.skillArea H2 {
+H2 {
   font-size: 50px;
   color: #808080;
+}
+
+.careerArea {
+  height: 100vh;
+}
+.careerArea UL {
+  list-style: none;
+}
+.careerArea UL LI {
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: solid;
+  border-color: #FF0000;
+  border-width: 2px;
+}
+.careerArea UL LI .wrap {
+  display: flex;
+}
+.careerArea UL LI .wrap .title {
+  display: flex;
+  width: 50%;
+}
+
+.skillArea {
+  height: 200vh;
+  padding: 20px 0px;
 }
 .skillArea H3 {
   padding: 18px 0;
