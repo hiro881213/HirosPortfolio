@@ -9,6 +9,8 @@ var AboutMyCareer_1 = require("./AboutMyCareer");
 var oracleLogo_png_1 = require("../../assets/about/oracleLogo.png");
 var mysqlLogo_jpg_1 = require("../../assets/about/mysqlLogo.jpg");
 var githubLogo_jpg_1 = require("../../assets/about/githubLogo.jpg");
+var recording_jpg_1 = require("../../assets/about/recording.jpg");
+var scenario_jpg_1 = require("../../assets/about/scenario.jpg");
 require("./scss/About.scss");
 exports.AboutMain = function () {
     // -----------------------------------------------
@@ -68,8 +70,12 @@ exports.AboutMain = function () {
                     React.createElement("div", { className: 'skill-container' },
                         React.createElement(AboutSkillArticle_1.AboutSkillArticle, { url: githubLogo_jpg_1["default"] })))),
             React.createElement("section", { className: 'w-container' },
-                React.createElement("div", { className: 'skillArea' },
+                React.createElement("div", { className: 'creativeArea' },
                     React.createElement("h2", null, "Creative Skills"),
                     React.createElement("h3", null, "Software"),
-                    React.createElement("div", { className: 'skill-container' }, lstCreativeSoftImages.map(function (lstCreativeSoftImage, index) { return (React.createElement(AboutSkillArticle_1.AboutSkillArticle, { url: lstCreativeSoftImage, key: index })); })))))));
+                    React.createElement("div", { className: 'skill-container' }, lstCreativeSoftImages.map(function (lstCreativeSoftImage, index) { return (React.createElement(AboutSkillArticle_1.AboutSkillArticle, { url: lstCreativeSoftImage, key: index })); })),
+                    React.createElement("h3", null, "Other"),
+                    React.createElement("div", { className: 'skill-container' },
+                        React.createElement(AboutSkillArticle_1.AboutSkillArticle, { url: recording_jpg_1["default"] }),
+                        React.createElement(AboutSkillArticle_1.AboutSkillArticle, { url: scenario_jpg_1["default"] })))))));
 };

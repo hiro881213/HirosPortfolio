@@ -6,6 +6,8 @@ import { AboutMyCareer } from './AboutMyCareer'
 import oracleLogo from '../../assets/about/oracleLogo.png'
 import mySQLLogo from '../../assets/about/mysqlLogo.jpg'
 import githubLogo from '../../assets/about/githubLogo.jpg'
+import recording from '../../assets/about/recording.jpg'
+import senario from '../../assets/about/scenario.jpg'
 
 import './scss/About.scss';
 
@@ -99,10 +101,11 @@ export const AboutMain = () => {
                         </div>
                     </div>
                 </section>
+
                 <section className = 'w-container'>
-                    <div className='skillArea'>
+                    <div className='creativeArea'>
                         <h2>Creative Skills</h2>
-                        
+
                         <h3>Software</h3>
                         <div className='skill-container'>
                         {
@@ -112,6 +115,11 @@ export const AboutMain = () => {
                         }
                         </div>
 
+                        <h3>Other</h3>
+                        <div className='skill-container'>
+                            <AboutSkillArticle url = {recording}></AboutSkillArticle>
+                            <AboutSkillArticle url = {senario}></AboutSkillArticle>
+                        </div>
                     </div>
                 </section>
             </main>
