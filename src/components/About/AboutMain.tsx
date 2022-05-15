@@ -44,13 +44,14 @@ export const AboutMain = () => {
                     <div className='careerArea'>
                         <h2>My Career</h2>
                         <ul>
+                            <li style = {{paddingBottom: '60px'}}>2014年4月よりメーカー系SEとして、フルスタックエンジニアでDXを目的としたシステム開発に従事</li>
                             <li><AboutMyCareer id = '1'></AboutMyCareer></li>
-                            <li>サーバリプレイス業務</li>
-                            <li>報告書郵送管理基幹システム</li>
-                            <li>画像管理基幹システム</li>
-                            <li>資料登録閲覧システム</li>
-                            <li>研究開発経理システム</li>
-                            <li>製造部品管理基幹システム</li>
+                            <li><AboutMyCareer id = '2'></AboutMyCareer></li>
+                            <li><AboutMyCareer id = '3'></AboutMyCareer></li>
+                            <li><AboutMyCareer id = '4'></AboutMyCareer></li>
+                            <li><AboutMyCareer id = '5'></AboutMyCareer></li>
+                            <li><AboutMyCareer id = '6'></AboutMyCareer></li>
+                            <li><AboutMyCareer id = '7'></AboutMyCareer></li>
                         </ul>
                     </div>
                 </section>

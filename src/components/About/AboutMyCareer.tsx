@@ -1,15 +1,17 @@
 import myCareerLabel from '../../assets/textLabels/myCareerLabel.json'
 
 export const AboutMyCareer = (props: any) => {
-    
+
     const id = props.id;
-    
+
     let sysName = "";
     let title = "";
     let first = "";
     let second = "";
     let third = ""
     let fourth = "";
+    let five = "";
+
 
     const sysNameKey = `sysName${id}`;
     const titleKey = `title${id}`;
@@ -17,6 +19,7 @@ export const AboutMyCareer = (props: any) => {
     const secondKey = `second${id}`;
     const thirdKey = `third${id}`;
     const fourthKey = `fourth${id}`;
+    const fiveKey = `fives${id}`
 
     for (const v in myCareerLabel) {
 
@@ -46,9 +49,8 @@ export const AboutMyCareer = (props: any) => {
             fourth = myCareerLabel[key];
         }
 
-
-        if (sysName !== '' && title !== '' && first !== '' && second !== '' && third !== '' && fourth !== '') {
-            break;
+        if (String(key) === fiveKey ) {
+            five = myCareerLabel[key];
         }
 
     }
@@ -64,6 +66,7 @@ export const AboutMyCareer = (props: any) => {
                     <br></br>
                     <p>{third}</p>
                     <p>{fourth}</p>
+                    <p>{five}</p>
                 </div>
             </div>
         </>

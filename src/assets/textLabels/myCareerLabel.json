@@ -4,5 +4,52 @@
     "first1": "PHPで実装されたシステムをJavaに変更およびレイアウトや仕様を効率化する",
     "second1": "要員：2人  工数：15人月",
     "third1": "Linux/PHP/JavaScript/jQuety/Java8/JSP/MySQL/Tomcat/Struts2/VMWare",
-    "fourth1": "設計/Webデザイン/実装/試験"
+    "fourth1": "設計/Webデザイン/実装/試験",
+
+    "sysName2": "サーバリプレイス業務",
+    "title2": "サーバの老朽化に伴うサーバ構成の変更",
+    "first2": "バックアップバッチ作成,ミドルウェアのバージョンアップに伴うシステム改修",
+    "second2": "要員：5人　工数： 30人月",
+    "third2": "UNIX/VMWare/シェルスクリプト/Java/PHP/ミドルウェア構築",
+    "fourth2": "プログラミング/単体テスト/結合テスト/システムテスト/保守・運用",
+
+    "sysName3": "報告書郵送管理基幹システム",
+    "title3": "報告書郵送管理基幹システム改修",
+    "first3": "業務報告書の送付用ラベル印刷/送付状況/顧客情報管理等の基幹システム改善",
+    "second3": "要員：3人 改修：20人月",
+    "third3": "Windows Server2016/JavaScript/Java8/JSP/Oracle12c/Tomcat/VMWare",
+    "fourth3": "要件定義/基本設計/詳細設計/プログラミング/試験/保守・運用",
+
+    "sysName4": "画像管理基幹システム",
+    "title4": "画像管理基幹システム開発",
+    "first4": "スキャナーで読み込んだ画像ファイルを整理・管理するシステムの開発",
+    "second4": "要員：3人 初期開発 10人月",
+    "third4": "Windows Server2016/Angular5/JavaEE/Oracle12c/Tomcat/VMWare",
+    "fourth4": "要件定義/基本設計/詳細設計/プログラミング/試験/保守・運用",
+    "fives4": "工程管理/人員管理/進捗管理/コスト管理/品質管理",
+
+    "sysName5": "資料登録閲覧システム",
+    "title5": "業務関連資料の検索・登録システムの開発",
+    "first5": "Excelを利用したインポートやエクセルベースの資料の詳細登録を行うシステム",
+    "second5": "要員：4人　初期開発 10人月　保守5人月　改修30人月",
+    "third5": "Unix/Oracle/MySQL/Java/HTML/CSS/SpringMVC/Apache/VMWare",
+    "fourth5": "PM/設計/Webデザイン/実装・試験",
+    "fives5": "工程管理/人員管理/進捗管理/コスト管理/品質管理",
+
+    "sysName6": "研究開発経理システム",
+    "title6": "研究開発経理システム開発",
+    "first6": "研究開発の費用を計算する経理システムの開発",
+    "second6": "要員：4人（合計：10人）初期開発 20人月 保守5人月 改修20人月",
+    "third6": "Linux/MySQL/Java/HTML/SASS/Angular6/JavaEE/VMWare",
+    "fourth6": "PM/設計/Webデザイン/実装・試験",
+    "fives6": "工程管理/人員管理/進捗管理/品質管理",
+
+    "sysName7": "製造部品管理基幹システム",
+    "title7": "製造部品管理基幹システム開発",
+    "first7": "各製品の製造に必要な部品の内訳の表示および製造状況を管理するシステム",
+    "second7": "要員：50人(複数社が関与しているため概算)初期開発 150人月",
+    "third7": "Java/JSP/CSS/Oracle/SpringFramework/JavaScript/jQuery",
+    "fourth7": "設計/Webデザイン/実装/試験",
+    "fives7": "工程管理/人員管理/進捗管理"
+
 }

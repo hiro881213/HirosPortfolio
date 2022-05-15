@@ -48,7 +48,7 @@ H2 {
 }
 
 .careerArea {
-  height: 100vh;
+  height: 300vh;
 }
 .careerArea UL {
   list-style: none;
@@ -65,7 +65,7 @@ H2 {
 }
 .careerArea UL LI .wrap .title {
   display: flex;
-  width: 50%;
+  width: 45%;
 }
 
 .skillArea {

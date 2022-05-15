@@ -10,12 +10,14 @@ exports.AboutMyCareer = function (props) {
     var second = "";
     var third = "";
     var fourth = "";
+    var five = "";
     var sysNameKey = "sysName" + id;
     var titleKey = "title" + id;
     var firstKey = "first" + id;
     var secondKey = "second" + id;
     var thirdKey = "third" + id;
     var fourthKey = "fourth" + id;
+    var fiveKey = "fives" + id;
     for (var v in myCareerLabel_json_1["default"]) {
         var key = v;
         if (String(key) === sysNameKey) {
@@ -36,8 +38,8 @@ exports.AboutMyCareer = function (props) {
         if (String(key) === fourthKey) {
             fourth = myCareerLabel_json_1["default"][key];
         }
-        if (sysName !== '' && title !== '' && first !== '' && second !== '' && third !== '' && fourth !== '') {
-            break;
+        if (String(key) === fiveKey) {
+            five = myCareerLabel_json_1["default"][key];
         }
     }
     return (React.createElement(React.Fragment, null,
@@ -50,5 +52,6 @@ exports.AboutMyCareer = function (props) {
                 React.createElement("p", null, second),
                 React.createElement("br", null),
                 React.createElement("p", null, third),
-                React.createElement("p", null, fourth)))));
+                React.createElement("p", null, fourth),
+                React.createElement("p", null, five)))));
 };
