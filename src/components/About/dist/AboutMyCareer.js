@@ -1,9 +1,15 @@
 "use strict";
 exports.__esModule = true;
 exports.AboutMyCareer = void 0;
+var react_intersection_observer_1 = require("react-intersection-observer");
+require("animate.css");
 var myCareerLabel_json_1 = require("../../assets/textLabels/myCareerLabel.json");
 exports.AboutMyCareer = function (props) {
+    // -------------------------------------------
+    // ラベル設定処理
+    // -------------------------------------------
     var id = props.id;
+    // 表示ラベル変数群
     var sysName = "";
     var title = "";
     var first = "";
@@ -11,6 +17,7 @@ exports.AboutMyCareer = function (props) {
     var third = "";
     var fourth = "";
     var five = "";
+    // キー一覧
     var sysNameKey = "sysName" + id;
     var titleKey = "title" + id;
     var firstKey = "first" + id;
@@ -42,8 +49,13 @@ exports.AboutMyCareer = function (props) {
             five = myCareerLabel_json_1["default"][key];
         }
     }
+    var _a = react_intersection_observer_1.useInView({
+        // オプション
+        rootMargin: '-50px',
+        triggerOnce: true
+    }), ref = _a.ref, inView = _a.inView;
     return (React.createElement(React.Fragment, null,
-        React.createElement("div", { className: 'wrap' },
+        React.createElement("div", { ref: ref, className: 'wrap' }, inView && (React.createElement("div", { className: "animate__animated animate__lightSpeedInLeft" },
             React.createElement("div", { className: 'title' },
                 React.createElement("h3", null, sysName)),
             React.createElement("div", null,
@@ -53,5 +65,5 @@ exports.AboutMyCareer = function (props) {
                 React.createElement("br", null),
                 React.createElement("p", null, third),
                 React.createElement("p", null, fourth),
-                React.createElement("p", null, five)))));
+                React.createElement("p", null, five)))))));
 };
