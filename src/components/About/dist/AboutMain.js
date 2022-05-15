@@ -35,7 +35,7 @@ exports.AboutMain = function () {
                     React.createElement("h2", null, "My Career"),
                     React.createElement("ul", null,
                         React.createElement("li", null,
-                            React.createElement(AboutMyCareer_1.AboutMyCareer, null)),
+                            React.createElement(AboutMyCareer_1.AboutMyCareer, { id: '1' })),
                         React.createElement("li", null, "\u30B5\u30FC\u30D0\u30EA\u30D7\u30EC\u30A4\u30B9\u696D\u52D9"),
                         React.createElement("li", null, "\u5831\u544A\u66F8\u90F5\u9001\u7BA1\u7406\u57FA\u5E79\u30B7\u30B9\u30C6\u30E0"),
                         React.createElement("li", null, "\u753B\u50CF\u7BA1\u7406\u57FA\u5E79\u30B7\u30B9\u30C6\u30E0"),

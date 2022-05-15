@@ -44,7 +44,7 @@ export const AboutMain = () => {
                     <div className='careerArea'>
                         <h2>My Career</h2>
                         <ul>
-                            <li><AboutMyCareer></AboutMyCareer></li>
+                            <li><AboutMyCareer id = '1'></AboutMyCareer></li>
                             <li>サーバリプレイス業務</li>
                             <li>報告書郵送管理基幹システム</li>
                             <li>画像管理基幹システム</li>

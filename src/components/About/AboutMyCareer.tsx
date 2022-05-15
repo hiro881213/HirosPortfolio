@@ -1,15 +1,69 @@
-export const AboutMyCareer = () => {
+import myCareerLabel from '../../assets/textLabels/myCareerLabel.json'
+
+export const AboutMyCareer = (props: any) => {
+    
+    const id = props.id;
+    
+    let sysName = "";
+    let title = "";
+    let first = "";
+    let second = "";
+    let third = ""
+    let fourth = "";
+
+    const sysNameKey = `sysName${id}`;
+    const titleKey = `title${id}`;
+    const firstKey = `first${id}`;
+    const secondKey = `second${id}`;
+    const thirdKey = `third${id}`;
+    const fourthKey = `fourth${id}`;
+
+    for (const v in myCareerLabel) {
+
+        const key = v as keyof typeof myCareerLabel
+
+        if (String(key) === sysNameKey ) {
+            sysName = myCareerLabel[key];
+        }
+
+        if (String(key) === titleKey ) {
+            title = myCareerLabel[key];
+        }
+
+        if (String(key) === firstKey ) {
+            first = myCareerLabel[key];
+        }
+
+        if (String(key) === secondKey ) {
+            second = myCareerLabel[key];
+        }
+
+        if (String(key) === thirdKey ) {
+            third = myCareerLabel[key];
+        }
+
+        if (String(key) === fourthKey ) {
+            fourth = myCareerLabel[key];
+        }
+
+
+        if (sysName !== '' && title !== '' && first !== '' && second !== '' && third !== '' && fourth !== '') {
+            break;
+        }
+
+    }
+
     return (
         <>
             <div className='wrap'>
-                <div className='title'><h3>輸出管理システム</h3></div>
+                <div className='title'><h3>{sysName}</h3></div>
                 <div>
-                    <p>PHPからJava化</p>
-                    <p>PHPで実装されたシステムをJavaに変更およびレイアウトや仕様を効率化する</p>
-                    <p>要員：2人  工数：15人月</p>
+                    <p>{title}</p>
+                    <p>{first}</p>
+                    <p>{second}</p>
                     <br></br>
-                    <p>Linux/PHP/JavaScript/jQuety/Java8/JSP/MySQL/Tomcat/Struts2/VMWare</p>
-                    <p>設計/Webデザイン/実装/試験</p>
+                    <p>{third}</p>
+                    <p>{fourth}</p>
                 </div>
             </div>
         </>
