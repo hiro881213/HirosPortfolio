@@ -23,6 +23,8 @@ exports.AboutMain = function () {
     var lstBackImages = importAll(require.context('../../assets/about/back', true, /\.(jpg)$/));
     // インフラアイコンリスト
     var lstInfrastructureImages = importAll(require.context('../../assets/about/infrastructure', true, /\.(jpg)$/));
+    // クリエイティブソフトリスト
+    var lstCreativeSoftImages = importAll(require.context('../../assets/about/creativeSoft', true, /\.(jpg)$/));
     return (React.createElement(React.Fragment, null,
         React.createElement("header", { className: 'workContainer w-container' },
             React.createElement("a", { href: CommonUtil_1.getUrl() },
@@ -67,5 +69,7 @@ exports.AboutMain = function () {
                         React.createElement(AboutSkillArticle_1.AboutSkillArticle, { url: githubLogo_jpg_1["default"] })))),
             React.createElement("section", { className: 'w-container' },
                 React.createElement("div", { className: 'skillArea' },
-                    React.createElement("h2", null, "Creative Skills"))))));
+                    React.createElement("h2", null, "Creative Skills"),
+                    React.createElement("h3", null, "Software"),
+                    React.createElement("div", { className: 'skill-container' }, lstCreativeSoftImages.map(function (lstCreativeSoftImage, index) { return (React.createElement(AboutSkillArticle_1.AboutSkillArticle, { url: lstCreativeSoftImage, key: index })); })))))));
 };

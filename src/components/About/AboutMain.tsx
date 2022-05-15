@@ -28,6 +28,10 @@ export const AboutMain = () => {
     // インフラアイコンリスト
     const lstInfrastructureImages:[] = importAll(require.context('../../assets/about/infrastructure', true, /\.(jpg)$/));
 
+    // クリエイティブソフトリスト
+    const lstCreativeSoftImages:[] = importAll(require.context('../../assets/about/creativeSoft', true, /\.(jpg)$/));
+
+
     return (
         <>
             <header className = 'workContainer w-container'>
@@ -98,6 +102,16 @@ export const AboutMain = () => {
                 <section className = 'w-container'>
                     <div className='skillArea'>
                         <h2>Creative Skills</h2>
+                        
+                        <h3>Software</h3>
+                        <div className='skill-container'>
+                        {
+                            lstCreativeSoftImages.map((lstCreativeSoftImage, index) => (
+                                <AboutSkillArticle url = {lstCreativeSoftImage} key = {index}></AboutSkillArticle>
+                            ))
+                        }
+                        </div>
+
                     </div>
                 </section>
             </main>
