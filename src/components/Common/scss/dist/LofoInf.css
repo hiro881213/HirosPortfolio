@@ -1,0 +1,49 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 20px;
+}
+
+.infinity1::before {
+  content: "";
+  width: 60px;
+  height: 60px;
+  display: inline-block;
+  border: 17.5px solid #ff1493;
+  border-radius: 60px 60px 0 60px;
+  transform: rotate(-45deg);
+  list-style: none;
+}
+
+.infinity1::after {
+  content: "";
+  width: 60px;
+  height: 60px;
+  display: inline-block;
+  border: 17.5px solid #0066FF;
+  border-radius: 60px 60px 60px 0;
+  transform: rotate(45deg);
+  list-style: none;
+}
+
+.infinity2::before {
+  content: "";
+  width: 120px;
+  height: 120px;
+  display: inline flow-root list-item;
+  border: 35px solid #ff1493;
+  border-radius: 120px 120px 0 120px;
+  transform: rotate(-45deg);
+  list-style: none;
+}
+
+.infinity2::after {
+  content: "";
+  width: 120px;
+  height: 120px;
+  display: inline flow-root list-item;
+  border: 35px solid #0066FF;
+  border-radius: 120px 120px 120px 0;
+  transform: rotate(45deg);
+  list-style: none;
+}
