@@ -25,6 +25,11 @@
   letter-spacing: 0.1em;
   font-family: "Monoton";
 }
+.allAbout H2 {
+  font-size: 50px;
+  color: #808080;
+  font-family: "Changa", sans-serif;
+}
 
 @media (max-width: 767px) {
   .allAbout .bgImg {
@@ -55,15 +60,9 @@
     opacity: 0;
   }
 }
-H2 {
-  font-size: 50px;
-  color: #808080;
-  font-family: "Changa", sans-serif;
-}
-
 @media (max-width: 767px) {
-  H2 {
-    font-size: 40px;
+  .allAbout H2 {
+    font-size: 30px;
   }
 }
 .careerArea {
@@ -86,11 +85,23 @@ H2 {
 .careerArea UL LI .wrap .title {
   display: flex;
 }
+.careerArea H2 {
+  font-size: 50px;
+  color: #808080;
+  font-family: "Changa", sans-serif;
+}
 
 @media (max-width: 767px) {
+  .careerArea {
+    height: 2400px;
+  }
   .careerArea UL {
-    font-size: 13px;
+    font-size: 12px;
     padding: 0;
+  }
+
+  H2 {
+    font-size: 30px !important;
   }
 }
 .skillArea {
@@ -99,6 +110,7 @@ H2 {
 }
 .skillArea H3 {
   padding: 18px 0;
+  font-family: "Changa", sans-serif;
 }
 .skillArea .skill-container {
   display: grid;
@@ -110,7 +122,33 @@ H2 {
   width: 200px;
   height: 150px;
 }
+.skillArea H2 {
+  font-size: 50px;
+  color: #808080;
+  font-family: "Changa", sans-serif;
+}
 
+@media (max-width: 767px) {
+  .skillArea {
+    height: 1400px;
+    padding: 0px;
+  }
+  .skillArea H3 {
+    padding: 0;
+  }
+  .skillArea .skill-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0px;
+  }
+  .skillArea .skill-container .skillPost IMG {
+    width: 80px;
+    height: 60px;
+  }
+
+  H2 {
+    font-size: 30px;
+  }
+}
 .creativeArea {
   height: 850px;
 }
@@ -124,9 +162,22 @@ H2 {
   width: 200px;
   height: 150px;
 }
+.creativeArea H2 {
+  font-size: 50px;
+  color: #808080;
+  font-family: "Changa", sans-serif;
+}
 
-@media (min-width: 768px) {
-  .skill-container {
-    grid-template-columns: repeat(3, 1fr);
+@media (max-width: 767px) {
+  .creativeArea H3 {
+    padding: 18px 0;
+    font-family: "Changa", sans-serif;
+  }
+  .creativeArea .skill-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .creativeArea .skill-container .skillPost IMG {
+    width: 80px;
+    height: 60px;
   }
 }

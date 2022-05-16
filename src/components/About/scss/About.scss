@@ -1,144 +1,200 @@
-    @import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
-    @import url('https://fonts.googleapis.com/earlyaccess/hannari.css');
-    .allAbout {
-        height: 85vh;
-        .bgImg {
-            background-size: 95vw;
-            opacity: 0;
-            position: absolute;
-            top: 20vh;
-            left: 0;
-            bottom: 0;
-            right: 0;
-            overflow: hidden;
-            background-repeat: no-repeat;
-            -webkit-background-clip: text;
-            color: transparent;
-            animation: bgAnime 16s infinite;
-            h1 {
-                font-size: 17vw;
-                font-weight: bold;
-                text-align: center;
-                line-height: 0.9em;
-                letter-spacing: 0.1em;
-                font-family: 'Monoton';
-            }
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+@import url('https://fonts.googleapis.com/earlyaccess/hannari.css');
+.allAbout {
+    height: 85vh;
+    .bgImg {
+        background-size: 95vw;
+        opacity: 0;
+        position: absolute;
+        top: 20vh;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        overflow: hidden;
+        background-repeat: no-repeat;
+        -webkit-background-clip: text;
+        color: transparent;
+        animation: bgAnime 16s infinite;
+        h1 {
+            font-size: 17vw;
+            font-weight: bold;
+            text-align: center;
+            line-height: 0.9em;
+            letter-spacing: 0.1em;
+            font-family: 'Monoton';
         }
     }
-    
-    @media (max-width: 767px) {
-        .allAbout {
-            .bgImg {
-                background-size: 220vw;
-                -ms-writing-mode: tb-rl;
-                writing-mode: vertical-rl;
-                h1 {
-                    font-size: 30vw;
-                    text-align: left;
-                    margin: 20px 5%;
-                }
-            }
-        }
-    }
-    
-    @keyframes bgAnime {
-        0% {
-            opacity: 0;
-        }
-        10% {
-            opacity: 1;
-        }
-        25% {
-            opacity: 1;
-        }
-        35% {
-            opacity: 0;
-        }
-        100% {
-            opacity: 0;
-        }
-    }
-    
     H2 {
         font-size: 50px;
         color: #808080;
         font-family: 'Changa', sans-serif;
     }
-    
-    @media (max-width: 767px) {
-        H2 {
-            font-size: 40px;
+}
+
+@media (max-width: 767px) {
+    .allAbout {
+        .bgImg {
+            background-size: 220vw;
+            -ms-writing-mode: tb-rl;
+            writing-mode: vertical-rl;
+            h1 {
+                font-size: 30vw;
+                text-align: left;
+                margin: 20px 5%;
+            }
         }
     }
-    
-    .careerArea {
-        height: 2700px;
-        font-family: 'M PLUS 1p', sans-serif;
-        UL {
-            list-style: none;
-            LI {
-                padding-bottom: 20px;
-                margin-bottom: 20px;
-                border-bottom: solid;
-                border-color: #dcdcdc;
-                border-width: 2px;
-                .wrap {
+}
+
+@keyframes bgAnime {
+    0% {
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    25% {
+        opacity: 1;
+    }
+    35% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .allAbout {
+        H2 {
+            font-size: 30px;
+        }
+    }
+}
+
+.careerArea {
+    height: 2700px;
+    font-family: 'M PLUS 1p', sans-serif;
+    UL {
+        list-style: none;
+        LI {
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+            border-bottom: solid;
+            border-color: #dcdcdc;
+            border-width: 2px;
+            .wrap {
+                display: flex;
+                .title {
                     display: flex;
-                    .title {
-                        display: flex;
-                    }
                 }
             }
         }
     }
-    
-    @media (max-width: 767px) {
-        .careerArea {
-            UL {
-                font-size: 13px;
-                padding: 0;
+    H2 {
+        font-size: 50px;
+        color: #808080;
+        font-family: 'Changa', sans-serif;
+    }
+}
+
+@media (max-width: 767px) {
+    .careerArea {
+        height: 2400px;
+        UL {
+            font-size: 12px;
+            padding: 0;
+        }
+    }
+    H2 {
+        font-size: 30px!important;
+    }
+}
+
+.skillArea {
+    height: 1800px;
+    padding: 20px 0px;
+    H3 {
+        padding: 18px 0;
+        font-family: 'Changa', sans-serif;
+    }
+    .skill-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 32px 25px;
+        overflow: hidden;
+        .skillPost {
+            IMG {
+                width: 200px;
+                height: 150px;
             }
         }
     }
-    
+    H2 {
+        font-size: 50px;
+        color: #808080;
+        font-family: 'Changa', sans-serif;
+    }
+}
+
+@media (max-width: 767px) {
     .skillArea {
-        height: 1800px;
-        padding: 20px 0px;
+        height: 1400px;
+        padding: 0px;
+        H3 {
+            padding: 0;
+        }
+        .skill-container {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 0px;
+            .skillPost {
+                IMG {
+                    width: 80px;
+                    height: 60px;
+                }
+            }
+        }
+    }
+    H2 {
+        font-size: 30px;
+    }
+}
+
+.creativeArea {
+    height: 850px;
+    .skill-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 32px 25px;
+        overflow: hidden;
+        .skillPost {
+            IMG {
+                width: 200px;
+                height: 150px;
+            }
+        }
+    }
+    H2 {
+        font-size: 50px;
+        color: #808080;
+        font-family: 'Changa', sans-serif;
+    }
+}
+
+@media (max-width: 767px) {
+    .creativeArea {
         H3 {
             padding: 18px 0;
+            font-family: 'Changa', sans-serif;
         }
         .skill-container {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 32px 25px;
-            overflow: hidden;
+            grid-template-columns: repeat(2, 1fr);
             .skillPost {
                 IMG {
-                    width: 200px;
-                    height: 150px;
+                    width: 80px;
+                    height: 60px;
                 }
             }
         }
     }
-    
-    .creativeArea {
-        height: 850px;
-        .skill-container {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 32px 25px;
-            overflow: hidden;
-            .skillPost {
-                IMG {
-                    width: 200px;
-                    height: 150px;
-                }
-            }
-        }
-    }
-    
-    @media (min-width: 768px) {
-        .skill-container {
-            grid-template-columns: repeat(3, 1fr);
-        }
-    }
+}
