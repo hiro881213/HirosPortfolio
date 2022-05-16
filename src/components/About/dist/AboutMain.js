@@ -38,7 +38,7 @@ exports.AboutMain = function () {
                 React.createElement("div", { className: 'careerArea' },
                     React.createElement("h2", null, "My Career"),
                     React.createElement("ul", null,
-                        React.createElement("li", { style: { paddingBottom: '60px' } }, "2014\u5E744\u6708\u3088\u308A\u30E1\u30FC\u30AB\u30FC\u7CFBSE\u3068\u3057\u3066\u3001\u30D5\u30EB\u30B9\u30BF\u30C3\u30AF\u30A8\u30F3\u30B8\u30CB\u30A2\u3067DX\u3092\u76EE\u7684\u3068\u3057\u305F\u30B7\u30B9\u30C6\u30E0\u958B\u767A\u306B\u5F93\u4E8B"),
+                        React.createElement("li", { style: { paddingBottom: '60px' } }, "2014\u5E744\u6708\u3088\u308A\u30E1\u30FC\u30AB\u30FC\u7CFBSE\u306E\u30D5\u30EB\u30B9\u30BF\u30C3\u30AF\u30A8\u30F3\u30B8\u30CB\u30A2\u3068\u3057\u3066DX\u3092\u76EE\u7684\u3068\u3057\u305F\u30B7\u30B9\u30C6\u30E0\u958B\u767A\u306B\u5F93\u4E8B"),
                         React.createElement("li", null,
                             React.createElement(AboutMyCareer_1.AboutMyCareer, { id: '1' })),
                         React.createElement("li", null,

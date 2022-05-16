@@ -58,8 +58,14 @@
 H2 {
   font-size: 50px;
   color: #808080;
+  font-family: "Changa", sans-serif;
 }
 
+@media (max-width: 767px) {
+  H2 {
+    font-size: 40px;
+  }
+}
 .careerArea {
   height: 2700px;
   font-family: "M PLUS 1p", sans-serif;
@@ -81,6 +87,12 @@ H2 {
   display: flex;
 }
 
+@media (max-width: 767px) {
+  .careerArea UL {
+    font-size: 13px;
+    padding: 0;
+  }
+}
 .skillArea {
   height: 1800px;
   padding: 20px 0px;

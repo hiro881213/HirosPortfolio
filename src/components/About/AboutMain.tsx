@@ -50,7 +50,7 @@ export const AboutMain = () => {
                     <div className='careerArea'>
                         <h2>My Career</h2>
                         <ul>
-                            <li style = {{paddingBottom: '60px'}}>2014年4月よりメーカー系SEとして、フルスタックエンジニアでDXを目的としたシステム開発に従事</li>
+                            <li style = {{paddingBottom: '60px'}}>2014年4月よりメーカー系SEのフルスタックエンジニアとしてDXを目的としたシステム開発に従事</li>
                             <li><AboutMyCareer id = '1'></AboutMyCareer></li>
                             <li><AboutMyCareer id = '2'></AboutMyCareer></li>
                             <li><AboutMyCareer id = '3'></AboutMyCareer></li>
