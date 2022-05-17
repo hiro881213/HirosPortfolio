@@ -66,11 +66,12 @@
   }
 }
 .careerArea {
-  height: 2700px;
+  height: 2800px;
   font-family: "M PLUS 1p", sans-serif;
 }
 .careerArea UL {
   list-style: none;
+  font-size: 15px;
 }
 .careerArea UL LI {
   padding-bottom: 20px;

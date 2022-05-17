@@ -1,6 +1,8 @@
 "use strict";
 exports.__esModule = true;
 exports.AboutMain = void 0;
+var react_1 = require("react");
+var react_router_dom_1 = require("react-router-dom");
 var CommonUtil_1 = require("../../CommonUtil");
 var LogoInf_1 = require("../Common/LogoInf");
 var AboutBackImage_1 = require("./AboutBackImage");
@@ -13,6 +15,10 @@ var recording_jpg_1 = require("../../assets/about/recording.jpg");
 var scenario_jpg_1 = require("../../assets/about/scenario.jpg");
 require("./scss/About.scss");
 exports.AboutMain = function () {
+    var pathname = react_router_dom_1.useLocation().pathname;
+    react_1.useEffect(function () {
+        window.scrollTo(0, 0);
+    }, [pathname]);
     // -----------------------------------------------
     // フォルダ内ファイル取得処理
     // -----------------------------------------------

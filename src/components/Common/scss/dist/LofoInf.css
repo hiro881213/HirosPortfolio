@@ -30,7 +30,7 @@
   content: "";
   width: 120px;
   height: 120px;
-  display: inline flow-root list-item;
+  display: inline-block;
   border: 35px solid #ff1493;
   border-radius: 120px 120px 0 120px;
   transform: rotate(-45deg);
@@ -41,7 +41,7 @@
   content: "";
   width: 120px;
   height: 120px;
-  display: inline flow-root list-item;
+  display: inline-block;
   border: 35px solid #0066FF;
   border-radius: 120px 120px 120px 0;
   transform: rotate(45deg);

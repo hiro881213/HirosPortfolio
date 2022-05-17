@@ -1,3 +1,6 @@
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
+
 import { getUrl } from '../../CommonUtil'
 import { LogoInf } from '../Common/LogoInf'
 import { AboutBackImage } from './AboutBackImage'
@@ -12,6 +15,12 @@ import senario from '../../assets/about/scenario.jpg'
 import './scss/About.scss';
 
 export const AboutMain = () => {
+
+    const { pathname } = useLocation();
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [pathname]);
 
     // -----------------------------------------------
     // フォルダ内ファイル取得処理
