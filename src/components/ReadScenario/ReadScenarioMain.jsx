@@ -1,5 +1,6 @@
 import React from "react";
-import ReactDOM from "react-dom";
+import MediaQuery from "react-responsive";
+
 import { useLocation, Link } from 'react-router-dom';
 import $ from "jquery";
 import "turn.js";
@@ -41,13 +42,9 @@ class Turn extends React.Component {
 
     componentWillUnmount = () => {
 
-        // if (this.el) {
-        //     $(this.el).turn("destroy").remove();
-        // }
-
         // キーダウンイベントをアンマウント
         document.removeEventListener("keydown", this.handleKeyDown, false);
-        
+
         //　Nextボタンクリックイベントをアンマウント
         document.getElementById('next').removeEventListener("click",this.handleNextButton, false);
 
@@ -64,7 +61,7 @@ class Turn extends React.Component {
         if (event.keyCode === 37) {
             $(this.el).turn("previous");
         }
-    
+
         if (event.keyCode === 39) {
             $(this.el).turn("next");
         }
@@ -162,7 +159,7 @@ export const ReadScenarioMain = () => {
         }
 
         return lstImages;
-    
+
     }
     // -----------------------------------------------
 
@@ -197,20 +194,57 @@ export const ReadScenarioMain = () => {
         page: pages.length
     };
 
+    // TURNJSオプション
+    const options2 = {
+        width: 300,
+        height: 200,
+        autoCenter: true,
+        display: "single",
+        acceleration: true,
+        elevation: 50,
+        gradients: !$.isTouch,
+        when: {
+            turned: function(e, page) {
+            }
+        },
+        // direction: 'ltr'
+        direction: "rtl",
+        page: pages.length
+    };
+
+
     return (
         <>
+            <MediaQuery query = '(min-width: 768px)'>
+                <Turn  options={options} className="magazine">
+                    {pages.map((page, index) => (
+                        <div key={index} className="page">
+                            <img src={page} alt="" />
+                        </div>
+                    ))}
+                </Turn>
+                <div style = {{textAlign: 'center'}}>
+                    <button id = 'next'>⇦⇦Next</button>
+                    <button id = 'prev'>Prev⇨⇨</button>
+                </div>
+            </MediaQuery>
 
-            <Turn  options={options} className="magazine">
-                {pages.map((page, index) => (
-                    <div key={index} className="page">
-                        <img src={page} alt="" />
-                    </div>
-                ))}
-            </Turn>
-            <div style = {{textAlign: 'center'}}>
-                <button id = 'next'>⇦⇦Next</button>
-                <button id = 'prev'>Prev⇨⇨</button>
-            </div>
+            <MediaQuery query = '(max-width: 767px)'>
+                <div style = {{marginTop: "100px"}}>
+                <Turn  options={options2} className="magazine">
+                    {pages.map((page, index) => (
+                        <div key={index} className="page">
+                            <img src={page} alt="" />
+                        </div>
+                    ))}
+                </Turn>
+                </div>
+                <div style = {{textAlign: 'center', marginTop: "100px"}}>
+                    <button id = 'next' style = {{marginRight: "140px"}}>⇦⇦Next</button>
+                    <button id = 'prev'>Prev⇨⇨</button>
+                </div>
+            </MediaQuery>
+
             <div className="button">
                 <Link to = '../script'>
                     <button>Go Back</button>
