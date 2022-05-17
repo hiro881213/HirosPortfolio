@@ -7,7 +7,7 @@ require("animate.css");
 exports.WorkDetail = function (props) {
     var _a = react_intersection_observer_1.useInView({
         // オプション
-        rootMargin: '-20px',
+        rootMargin: '0px',
         triggerOnce: true
     }), ref = _a.ref, inView = _a.inView;
     var target = props.children;

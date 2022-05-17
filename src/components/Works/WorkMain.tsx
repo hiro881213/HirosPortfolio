@@ -1,3 +1,6 @@
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
+
 import { getUrl } from '../../CommonUtil'
 import { LogoInf } from '../Common/LogoInf'
 import { WorkItems } from './WorkItems'
@@ -6,6 +9,12 @@ import { WorkDetail } from './WorkDetail'
 import './scss/work.scss';
 
 export const WorkMain = () => {
+
+    const { pathname } = useLocation();
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [pathname]);
 
     // ファイル読み込み処理
     const importAll = (r: __WebpackModuleApi.RequireContext) => {
