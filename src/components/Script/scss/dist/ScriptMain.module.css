@@ -1,60 +1,69 @@
 .mainClass {
   text-align: center;
   place-items: center;
-  height: calc(100vh - 150px);
-  overflow: hidden;
 }
 .mainClass LABEL {
+  font-size: 15px;
   position: fixed;
   top: 150px;
-  right: 40px;
-  height: 550px;
-  font-size: 100px;
-  -ms-writing-mode: tb-rl;
-  writing-mode: vertical-rl;
-  letter-spacing: 0.1em;
-  text-orientation: sideways;
-  color: #313131;
-  font-family: "Tsukushi B Round Gothic";
-  font-weight: normal;
-  font-weight: 100;
-  white-space: nowrap;
-  overflow: hidden;
-  border-bottom: 1px solid rgba(242, 242, 242, 0.5);
-  animation: typing 1.5s steps(10), blink 0.5s steps(1) infinite alternate;
-}
-@keyframes typing {
-  0% {
-    height: 0;
-  }
-}
-@keyframes blink {
-  50% {
-    border-bottom-color: #242424;
-  }
-}
-@keyframes blink {
-  100% {
-    border-bottom: none;
-  }
-}
-.mainClass DIV {
-  opacity: 0;
-  animation: fade 0.5s ease-in-out 1s 1 normal forwards;
-}
-@keyframes fade {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
 }
 
+@media (min-width: 767px) {
+  .mainClass {
+    height: calc(100vh - 150px);
+    overflow: hidden;
+  }
+  .mainClass LABEL {
+    top: 150px;
+    right: 40px;
+    height: 550px;
+    font-size: 100px;
+    -ms-writing-mode: tb-rl;
+    writing-mode: vertical-rl;
+    letter-spacing: 0.1em;
+    text-orientation: sideways;
+    color: #313131;
+    font-family: "Tsukushi B Round Gothic";
+    font-weight: normal;
+    font-weight: 100;
+    white-space: nowrap;
+    overflow: hidden;
+    border-bottom: 1px solid rgba(242, 242, 242, 0.5);
+    animation: typing 1.5s steps(10), blink 0.5s steps(1) infinite alternate;
+  }
+  @keyframes typing {
+    0% {
+      height: 0;
+    }
+  }
+  @keyframes blink {
+    50% {
+      border-bottom-color: #242424;
+    }
+  }
+  @keyframes blink {
+    100% {
+      border-bottom: none;
+    }
+  }
+  .mainClass DIV {
+    opacity: 0;
+    animation: fade 0.5s ease-in-out 1s 1 normal forwards;
+  }
+  @keyframes fade {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}
 .listScripts {
   width: 1300px;
   text-align: center;
   margin-top: -50px;
+  position: fixed;
 }
 .listScripts IMG {
   border: 1px solid #242424;
@@ -78,4 +87,14 @@
   animation-duration: 1s;
   animation-fill-mode: forwards;
   opacity: 0;
+}
+
+@media (max-width: 767px) {
+  .scriptImg {
+    width: 290px;
+  }
+
+  IMG {
+    border: 1px solid #242424;
+  }
 }
