@@ -5,6 +5,7 @@
 .mainClass LABEL {
   font-size: 15px;
   position: fixed;
+  font-family: "Tsukushi B Round Gothic";
   top: 150px;
 }
 
@@ -23,7 +24,6 @@
     letter-spacing: 0.1em;
     text-orientation: sideways;
     color: #313131;
-    font-family: "Tsukushi B Round Gothic";
     font-weight: normal;
     font-weight: 100;
     white-space: nowrap;

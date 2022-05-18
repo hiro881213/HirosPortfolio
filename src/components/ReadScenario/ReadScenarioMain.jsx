@@ -20,14 +20,14 @@ class Turn extends React.Component {
     // -----------------------------------------
 
     componentDidMount = () => {
-        
+
         if (this.el) {
             $(this.el).turn(Object.assign({}, this.props.options));
         }
-        
+
         // キーダウンイベントを追加
         document.addEventListener("keydown", this.handleKeyDown, false);
-        
+
         // Nextボタンクリックイベントを追加
         document.getElementById('next').addEventListener("click",this.handleNextButton, false);
 
