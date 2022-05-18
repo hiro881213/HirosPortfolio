@@ -55,8 +55,8 @@ export const AboutMain = () => {
                     <AboutBackImage></AboutBackImage>
                 </section>
 
-                <section className = 'w-container'>
-                    <div className='careerArea'>
+                <section className = 'careerAreaColor'>
+                    <div className='w-container careerArea'>
                         <h2>My Career</h2>
                         <ul>
                             <li style = {{paddingBottom: '60px'}}>2014年4月よりメーカー系SEのフルスタックエンジニアとしてDXを目的としたシステム開発に従事</li>

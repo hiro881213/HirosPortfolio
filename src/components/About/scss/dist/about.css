@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/earlyaccess/hannari.css");
 .allAbout {
   height: 85vh;
+  background-color: #fdfdfd;
 }
 .allAbout .bgImg {
   background-size: 95vw;
@@ -65,6 +66,10 @@
     font-size: 30px;
   }
 }
+.careerAreaColor {
+  background-color: #f9f9ff;
+}
+
 .careerArea {
   height: 2800px;
   font-family: "M PLUS 1p", sans-serif;
@@ -108,6 +113,7 @@
 .skillArea {
   height: 1800px;
   padding: 20px 0px;
+  background-color: #fffff9;
 }
 .skillArea H3 {
   padding: 18px 0;
