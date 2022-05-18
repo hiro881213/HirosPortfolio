@@ -8,6 +8,7 @@ var LogoInf_1 = require("../Common/LogoInf");
 var ScriptList_1 = require("./ScriptList");
 var page1_jpg_1 = require("../../assets/scenario/scenario1/page1.jpg");
 var page1_jpg_2 = require("../../assets/scenario/scenario2/page1.jpg");
+var page1_jpg_3 = require("../../assets/scenario/scenario3/page1.jpg");
 var ScriptMain_module_scss_1 = require("./scss/ScriptMain.module.scss");
 exports.ScriptMain = function () {
     var baseURL = "../";
@@ -26,7 +27,11 @@ exports.ScriptMain = function () {
                 React.createElement("div", { style: { padding: "150px 0" } },
                     React.createElement(react_router_dom_1.Link, { to: baseURL + "detailScenario?story=1" },
                         React.createElement("img", { src: page1_jpg_1["default"], alt: "scenario1", className: ScriptMain_module_scss_1["default"].scriptImg }))),
+                "zzz",
                 React.createElement("div", null,
                     React.createElement(react_router_dom_1.Link, { to: baseURL + "detailScenario?story=2" },
-                        React.createElement("img", { src: page1_jpg_2["default"], alt: "scenario2", className: ScriptMain_module_scss_1["default"].scriptImg })))))));
+                        React.createElement("img", { src: page1_jpg_2["default"], alt: "scenario2", className: ScriptMain_module_scss_1["default"].scriptImg }))),
+                React.createElement("div", null,
+                    React.createElement(react_router_dom_1.Link, { to: baseURL + "detailScenario?story=3" },
+                        React.createElement("img", { src: page1_jpg_3["default"], alt: "scenario3", className: ScriptMain_module_scss_1["default"].scriptImg })))))));
 };

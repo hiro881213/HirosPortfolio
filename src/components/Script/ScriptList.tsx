@@ -6,6 +6,7 @@ import classes from "./scss/ScriptList.module.scss"
 
 import story1 from '../../assets/scenario/scenario1/page1.jpg';
 import story2 from '../../assets/scenario/scenario2/page1.jpg';
+import story3 from '../../assets/scenario/scenario3/page1.jpg';
 
 export const ScriptList = () => {
 
@@ -43,6 +44,12 @@ export const ScriptList = () => {
                         <img src={story2} alt = {"scenario2"} className={classes.scriptImg} />
                     </Link>
                 </div>
+                <div>
+                    <Link to = {`${baseURL}detailScenario?story=3`}>
+                        <img src={story3} alt = {"scenario3"} className={classes.scriptImg} />
+                    </Link>
+                </div>
+
             </Carousel>
         </>
     );

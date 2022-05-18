@@ -152,10 +152,16 @@ export const ReadScenarioMain = () => {
         let lstImages = [];
 
         if (target === '1') {
+
             lstImages = importAll(require.context('../../assets/scenario/scenario1/', true, /\.(jpg)$/));
 
         } else if (target === '2') {
+
             lstImages = importAll(require.context('../../assets/scenario/scenario2/', true, /\.(jpg)$/));
+
+        } else if (target === '3') {
+
+            lstImages = importAll(require.context('../../assets/scenario/scenario3/', true, /\.(jpg)$/));
         }
 
         return lstImages;

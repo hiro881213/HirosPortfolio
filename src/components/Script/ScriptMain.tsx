@@ -7,7 +7,7 @@ import { ScriptList } from './ScriptList';
 
 import story1 from '../../assets/scenario/scenario1/page1.jpg';
 import story2 from '../../assets/scenario/scenario2/page1.jpg';
-
+import story3 from '../../assets/scenario/scenario3/page1.jpg';
 
 import classes from './scss/ScriptMain.module.scss';
 
@@ -38,9 +38,15 @@ export const ScriptMain = () => {
                             <img src={story1} alt = {"scenario1"} className={classes.scriptImg} />
                         </Link>
                     </div>
+                    zzz
                     <div>
                         <Link to = {`${baseURL}detailScenario?story=2`}>
                             <img src={story2} alt = {"scenario2"} className={classes.scriptImg} />
+                        </Link>
+                    </div>
+                    <div>
+                        <Link to = {`${baseURL}detailScenario?story=3`}>
+                            <img src={story3} alt = {"scenario3"} className={classes.scriptImg} />
                         </Link>
                     </div>
                 </div>

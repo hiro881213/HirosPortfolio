@@ -7,6 +7,7 @@ var react_router_dom_1 = require("react-router-dom");
 var ScriptList_module_scss_1 = require("./scss/ScriptList.module.scss");
 var page1_jpg_1 = require("../../assets/scenario/scenario1/page1.jpg");
 var page1_jpg_2 = require("../../assets/scenario/scenario2/page1.jpg");
+var page1_jpg_3 = require("../../assets/scenario/scenario3/page1.jpg");
 exports.ScriptList = function () {
     var baseURL = "../";
     var responsive = {
@@ -34,5 +35,8 @@ exports.ScriptList = function () {
                     React.createElement("img", { src: page1_jpg_1["default"], alt: "scenario1", className: ScriptList_module_scss_1["default"].scriptImg }))),
             React.createElement("div", null,
                 React.createElement(react_router_dom_1.Link, { to: baseURL + "detailScenario?story=2" },
-                    React.createElement("img", { src: page1_jpg_2["default"], alt: "scenario2", className: ScriptList_module_scss_1["default"].scriptImg }))))));
+                    React.createElement("img", { src: page1_jpg_2["default"], alt: "scenario2", className: ScriptList_module_scss_1["default"].scriptImg }))),
+            React.createElement("div", null,
+                React.createElement(react_router_dom_1.Link, { to: baseURL + "detailScenario?story=3" },
+                    React.createElement("img", { src: page1_jpg_3["default"], alt: "scenario3", className: ScriptList_module_scss_1["default"].scriptImg }))))));
 };
