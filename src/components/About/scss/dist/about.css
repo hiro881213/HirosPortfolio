@@ -110,10 +110,13 @@
     font-size: 30px !important;
   }
 }
+.skillAreaColor {
+  background-color: #fffff9;
+}
+
 .skillArea {
   height: 1800px;
   padding: 20px 0px;
-  background-color: #fffff9;
 }
 .skillArea H3 {
   padding: 18px 0;

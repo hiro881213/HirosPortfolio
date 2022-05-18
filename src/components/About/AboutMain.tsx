@@ -71,8 +71,8 @@ export const AboutMain = () => {
                     </div>
                 </section>
 
-                <section className = 'w-container'>
-                    <div className='skillArea'>
+                <section className = 'skillAreaColor'>
+                    <div className='skillArea w-container'>
                         <h2>Programming Skills</h2>
                         <h3>Frontend</h3>
                         <div className='skill-container'>
