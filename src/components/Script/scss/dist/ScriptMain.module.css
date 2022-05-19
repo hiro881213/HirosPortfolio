@@ -90,12 +90,11 @@
 }
 
 @media (max-width: 767px) {
-  .scriptImg {
-    width: 290px;
-  }
-
-  IMG {
+  .mainClass IMG {
     border: 1px solid #242424;
     height: 99% !important;
+  }
+  .mainClass .scriptImg {
+    width: 290px;
   }
 }

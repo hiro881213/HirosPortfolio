@@ -4,20 +4,17 @@
     text-align: center;
     display: grid;
     place-items: center;
-
     IMG {
-        width : 60%;
+        width: 60%;
         height: 60%;
     }
-
     .bookArea {
         margin-top: 100px;
     }
-
 }
 
 .button {
-    position : fixed;
+    position: fixed;
     bottom: 30px;
     right: 50px;
 }
@@ -34,9 +31,9 @@
     font-weight: 700;
     background-color: #cccccc;
     border-radius: 50vh;
-  }
-  
-  .button BUTTON::after {
+}
+
+.button BUTTON::after {
     content: '';
     width: 5px;
     height: 5px;

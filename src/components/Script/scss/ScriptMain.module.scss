@@ -91,11 +91,13 @@
 }
 
 @media (max-width: 767px) {
-    .scriptImg {
-        width: 290px;
-    }
-    IMG {
-        border: 1px solid #242424;
-        height: 99% !important;
+    .mainClass {
+        IMG {
+            border: 1px solid #242424;
+            height: 99% !important;
+        }
+        .scriptImg {
+            width: 290px;
+        }
     }
 }

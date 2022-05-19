@@ -38,13 +38,14 @@ export const ScriptMain = () => {
                             <img src={story1} alt = {"scenario1"} className={classes.scriptImg} />
                         </Link>
                     </div>
-                    zzz
+
                     <div>
                         <Link to = {`${baseURL}detailScenario?story=2`}>
                             <img src={story2} alt = {"scenario2"} className={classes.scriptImg} />
                         </Link>
                     </div>
-                    <div>
+
+                    <div style = {{padding: "150px 0"}}>
                         <Link to = {`${baseURL}detailScenario?story=3`}>
                             <img src={story3} alt = {"scenario3"} className={classes.scriptImg} />
                         </Link>
