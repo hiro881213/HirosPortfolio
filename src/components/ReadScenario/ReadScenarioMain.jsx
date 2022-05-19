@@ -203,7 +203,7 @@ export const ReadScenarioMain = () => {
     // TURNJSオプション
     const options2 = {
         width: 300,
-        height: 200,
+        height: 297,
         autoCenter: true,
         display: "single",
         acceleration: true,
@@ -236,7 +236,7 @@ export const ReadScenarioMain = () => {
             </MediaQuery>
 
             <MediaQuery query = '(max-width: 767px)'>
-                <div style = {{marginTop: "100px"}}>
+                <div style = {{marginTop: "100px", textAlign: "center"}}>
                 <Turn  options={options2} className="magazine">
                     {pages.map((page, index) => (
                         <div key={index} className="page">
