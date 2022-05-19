@@ -36,5 +36,5 @@ exports.PcMenu = function () {
                 react_1["default"].createElement(TitleItem_1.TitleItem, null)),
             react_1["default"].createElement(MenuItem_1.MenuItem, { src: ProgramImage_jpg_1["default"], url: baseURL + "about" }, "About"),
             react_1["default"].createElement(MenuItem_1.MenuItem, { src: GraphicImage_jpg_1["default"], url: baseURL + "work" }, "graphic"),
-            react_1["default"].createElement(MenuItem_1.MenuItem, { src: ScriptImage_jpg_1["default"], url: baseURL + "script" }, "Scenalio"))));
+            react_1["default"].createElement(MenuItem_1.MenuItem, { src: ScriptImage_jpg_1["default"], url: baseURL + "script" }, "Scenario"))));
 };

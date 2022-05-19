@@ -51,7 +51,7 @@ export const PcMenu = () => {
                 </article>
                 <MenuItem src = {program} url = {`${baseURL}about`}>About</MenuItem>
                 <MenuItem src = {graphic} url = {`${baseURL}work`}>graphic</MenuItem>
-                <MenuItem src = {script}  url = {`${baseURL}script`}>Scenalio</MenuItem>
+                <MenuItem src = {script}  url = {`${baseURL}script`}>Scenario</MenuItem>
             </div>
         </>
     );
