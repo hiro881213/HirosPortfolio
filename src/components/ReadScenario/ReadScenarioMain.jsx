@@ -134,7 +134,7 @@ export const ReadScenarioMain = () => {
     // GETパラメータを取得する
     const params = new URLSearchParams(useLocation().search);
     const target = params.get('story')
-    
+
     // -----------------------------------------------
     // フォルダ内ファイル取得処理
     // -----------------------------------------------
@@ -142,7 +142,7 @@ export const ReadScenarioMain = () => {
     const importAll = (r)  => {
         return r.keys().map(r);
     };
-    
+
     // -----------------------------------------------
     // フォルダ内ファイルインポート処理
     // -----------------------------------------------

@@ -1,12 +1,15 @@
 .mainClass {
   text-align: center;
   place-items: center;
+  background-color: #fffcf9;
 }
 .mainClass LABEL {
-  font-size: 15px;
-  position: fixed;
+  font-size: 30px;
+  position: absolute;
   font-family: "Tsukushi B Round Gothic";
   top: 150px;
+  font-weight: bold;
+  color: #313131;
 }
 
 @media (min-width: 767px) {
@@ -15,15 +18,15 @@
     overflow: hidden;
   }
   .mainClass LABEL {
-    top: 150px;
+    font-weight: normal;
     right: 40px;
     height: 550px;
     font-size: 100px;
+    position: fixed;
     -ms-writing-mode: tb-rl;
     writing-mode: vertical-rl;
     letter-spacing: 0.1em;
     text-orientation: sideways;
-    color: #313131;
     font-weight: normal;
     font-weight: 100;
     white-space: nowrap;
