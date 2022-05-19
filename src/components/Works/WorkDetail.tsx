@@ -13,9 +13,11 @@ export const WorkDetail = (props: any) => {
     let target = props.children;
     let title = '';
     let message = ''
+    let makeMessage = '';
 
     const targetTitleKey = `graphicTitle${target}`;
     const targetMessageKey = `graphicMessage${target}`;
+    const targetMakeMessageKey = `makeessage${target}`;
 
     for (const v in graphicData) {
 
@@ -29,8 +31,8 @@ export const WorkDetail = (props: any) => {
             message = graphicData[key];
         }
 
-        if (title !== '' && message !== '') {
-            break;
+        if (String(key) === targetMakeMessageKey) {
+            makeMessage = graphicData[key];
         }
 
     }
@@ -42,10 +44,13 @@ export const WorkDetail = (props: any) => {
                     inView && (
                         <div className="animate__animated animate__zoomIn">
                             <div className = 'titleDiv'><span>{title}</span></div>
+                            <div className='memoDiv'>Maked By <span style = {{fontWeight: "bold"}}>{makeMessage}</span></div>
                             <figure>
-                                <img src= {props.pictUrl}></img>
+                                <img src= {props.pictUrl} alt = {props.pictUrl}></img>
                             </figure>
-                            <div className='memoDiv'><span>{message}</span></div>
+                            <div className='memoDiv'>
+                                <span>{message}</span>
+                            </div>
                         </div>
                 )}
             </article>
