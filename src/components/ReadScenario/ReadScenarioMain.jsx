@@ -21,9 +21,12 @@ class Turn extends React.Component {
 
     componentDidMount = () => {
 
+        // if (this.el) {
+        //     $(this.el).turn(Object.assign({}, this.props.options));
+        // }
         if (this.el) {
             $(this.el).turn(Object.assign({}, this.props.options));
-        }
+          }
 
         // キーダウンイベントを追加
         document.addEventListener("keydown", this.handleKeyDown, false);
